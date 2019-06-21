@@ -1,4 +1,19 @@
 PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
   - Framer (1.5.0)
   - OCMock (3.4.3)
   - RamblerTyphoonUtils (1.5.0):
@@ -17,6 +32,7 @@ PODS:
   - ViperMcFlurry (1.5.2)
 
 DEPENDENCIES:
+  - AFNetworking
   - Framer
   - OCMock
   - RamblerTyphoonUtils
@@ -25,6 +41,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - AFNetworking
     - Framer
     - OCMock
     - RamblerTyphoonUtils
@@ -32,12 +49,13 @@ SPEC REPOS:
     - ViperMcFlurry
 
 SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   Framer: 6c0b1443ba51720263daa82dc0220546d71601ce
   OCMock: 43565190abc78977ad44a61c0d20d7f0784d35ab
   RamblerTyphoonUtils: 08a6b5592e045a490cd4550aa9ea4a581308d482
   Typhoon: f8901ef1ad0e2fa520cda0f668492dd33353f7dc
   ViperMcFlurry: 701bc3ad8d188b1f1e157ec0ddf4e77184de88b5
 
-PODFILE CHECKSUM: f3d13e3f5ad966fa7fe460b641ede848c54fc99c
+PODFILE CHECKSUM: 49c1a9b242a29ea473470d053ad226060332a8d5
 
 COCOAPODS: 1.7.0

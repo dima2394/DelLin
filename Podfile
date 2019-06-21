@@ -11,5 +11,6 @@ pod 'OCMock'
 pod 'RamblerTyphoonUtils'
 pod 'ViperMcFlurry'
 pod 'Framer'
+pod 'AFNetworking' 
 
 end
