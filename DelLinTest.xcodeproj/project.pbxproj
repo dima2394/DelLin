@@ -1,0 +1,517 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		356445732D1B6C1E556364D1 /* FormOrderAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 5642838D9F6DD4E3BF038610 /* FormOrderAssembly.m */; };
+		5F4DD379DAE9BD80F5D81AF0 /* libPods-DelLinTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B6AB53A99C1022923E45F48 /* libPods-DelLinTest.a */; };
+		60270D7FB6BAC18FC16C4084 /* FormOrderPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9774BC20C6B9AD8C2E5A6A /* FormOrderPresenter.m */; };
+		73B3C86AD17FC189722B8281 /* FormOrderRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 03AC6B6A848771A808D84642 /* FormOrderRouter.m */; };
+		7658367922BCCA25005E8D25 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7658367822BCCA25005E8D25 /* AppDelegate.m */; };
+		7658367C22BCCA25005E8D25 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7658367B22BCCA25005E8D25 /* ViewController.m */; };
+		7658367F22BCCA25005E8D25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7658367D22BCCA25005E8D25 /* Main.storyboard */; };
+		7658368222BCCA25005E8D25 /* DelLinTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7658368022BCCA25005E8D25 /* DelLinTest.xcdatamodeld */; };
+		7658368422BCCA29005E8D25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7658368322BCCA29005E8D25 /* Assets.xcassets */; };
+		7658368722BCCA29005E8D25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7658368522BCCA29005E8D25 /* LaunchScreen.storyboard */; };
+		7658368A22BCCA29005E8D25 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7658368922BCCA29005E8D25 /* main.m */; };
+		79A299774C7AE1BBE68E51F3 /* FormOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AEFD1CB371B7533B3A77E27 /* FormOrderViewController.m */; };
+		FBB828B5B2E8E824A72C567F /* FormOrderInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F10409A34656D0E134E377A /* FormOrderInteractor.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		026545E2509D676D869ED1F9 /* FormOrderInteractorInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FormOrderInteractorInput.h; sourceTree = "<group>"; };
+		03AC6B6A848771A808D84642 /* FormOrderRouter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FormOrderRouter.m; sourceTree = "<group>"; };
+		280ED236B1F8F4C8401996A8 /* FormOrderModuleInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FormOrderModuleInput.h; sourceTree = "<group>"; };
+		28E9E6996A07C2F3E002B5FF /* FormOrderInteractor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FormOrderInteractor.h; sourceTree = "<group>"; };
+		2F10409A34656D0E134E377A /* FormOrderInteractor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FormOrderInteractor.m; sourceTree = "<group>"; };
+		3C9774BC20C6B9AD8C2E5A6A /* FormOrderPresenter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FormOrderPresenter.m; sourceTree = "<group>"; };
+		40CDF87BD548E75796265775 /* FormOrderViewInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FormOrderViewInput.h; sourceTree = "<group>"; };
+		5642838D9F6DD4E3BF038610 /* FormOrderAssembly.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FormOrderAssembly.m; sourceTree = "<group>"; };
+		5B6AB53A99C1022923E45F48 /* libPods-DelLinTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DelLinTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		61CB9667562F4D896BD02367 /* FormOrderViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FormOrderViewController.h; sourceTree = "<group>"; };
+		6CB6D76B8A42FF49C25374DD /* FormOrderPresenter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FormOrderPresenter.h; sourceTree = "<group>"; };
+		73832CB4D199B5340050AF8D /* Pods-DelLinTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DelLinTest.debug.xcconfig"; path = "Target Support Files/Pods-DelLinTest/Pods-DelLinTest.debug.xcconfig"; sourceTree = "<group>"; };
+		7658367422BCCA25005E8D25 /* DelLinTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DelLinTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7658367722BCCA25005E8D25 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7658367822BCCA25005E8D25 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7658367A22BCCA25005E8D25 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		7658367B22BCCA25005E8D25 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7658367E22BCCA25005E8D25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7658368122BCCA25005E8D25 /* DelLinTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DelLinTest.xcdatamodel; sourceTree = "<group>"; };
+		7658368322BCCA29005E8D25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7658368622BCCA29005E8D25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7658368822BCCA29005E8D25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7658368922BCCA29005E8D25 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9AEFD1CB371B7533B3A77E27 /* FormOrderViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FormOrderViewController.m; sourceTree = "<group>"; };
+		BA6776AFBA73CA3185C9C2AD /* Pods-DelLinTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DelLinTest.release.xcconfig"; path = "Target Support Files/Pods-DelLinTest/Pods-DelLinTest.release.xcconfig"; sourceTree = "<group>"; };
+		BEF1C6D4A745EAB60D8B16D6 /* FormOrderRouter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FormOrderRouter.h; sourceTree = "<group>"; };
+		D1EABF1E7886F860F5D1CC2F /* FormOrderViewOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FormOrderViewOutput.h; sourceTree = "<group>"; };
+		E25E0B7C58012AF0309053FF /* FormOrderAssembly.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FormOrderAssembly.h; sourceTree = "<group>"; };
+		EA0916B50D098AFB922266A5 /* FormOrderInteractorOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FormOrderInteractorOutput.h; sourceTree = "<group>"; };
+		F3D40DF1E5BBF29219C9E836 /* FormOrderRouterInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FormOrderRouterInput.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7658367122BCCA25005E8D25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F4DD379DAE9BD80F5D81AF0 /* libPods-DelLinTest.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D001CBDDA2AC6352C605961 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				B07C23AA4E5BF7FF6C836769 /* Modules */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		28492AB7061FB173362AA741 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				40CDF87BD548E75796265775 /* FormOrderViewInput.h */,
+				D1EABF1E7886F860F5D1CC2F /* FormOrderViewOutput.h */,
+				61CB9667562F4D896BD02367 /* FormOrderViewController.h */,
+				9AEFD1CB371B7533B3A77E27 /* FormOrderViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		49EBEDA5BC50AE1D8E722D42 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				73832CB4D199B5340050AF8D /* Pods-DelLinTest.debug.xcconfig */,
+				BA6776AFBA73CA3185C9C2AD /* Pods-DelLinTest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		55C69C181F70F4E41726844A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				280ED236B1F8F4C8401996A8 /* FormOrderModuleInput.h */,
+				6CB6D76B8A42FF49C25374DD /* FormOrderPresenter.h */,
+				3C9774BC20C6B9AD8C2E5A6A /* FormOrderPresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		7658366B22BCCA25005E8D25 = {
+			isa = PBXGroup;
+			children = (
+				7658367622BCCA25005E8D25 /* DelLinTest */,
+				7658367522BCCA25005E8D25 /* Products */,
+				49EBEDA5BC50AE1D8E722D42 /* Pods */,
+				B7E4A1230B9DD43453FA454B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7658367522BCCA25005E8D25 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7658367422BCCA25005E8D25 /* DelLinTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7658367622BCCA25005E8D25 /* DelLinTest */ = {
+			isa = PBXGroup;
+			children = (
+				0D001CBDDA2AC6352C605961 /* Presentation */,
+				7658367722BCCA25005E8D25 /* AppDelegate.h */,
+				7658367822BCCA25005E8D25 /* AppDelegate.m */,
+				7658367A22BCCA25005E8D25 /* ViewController.h */,
+				7658367B22BCCA25005E8D25 /* ViewController.m */,
+				7658367D22BCCA25005E8D25 /* Main.storyboard */,
+				7658368322BCCA29005E8D25 /* Assets.xcassets */,
+				7658368522BCCA29005E8D25 /* LaunchScreen.storyboard */,
+				7658368822BCCA29005E8D25 /* Info.plist */,
+				7658368922BCCA29005E8D25 /* main.m */,
+				7658368022BCCA25005E8D25 /* DelLinTest.xcdatamodeld */,
+			);
+			path = DelLinTest;
+			sourceTree = "<group>";
+		};
+		8B00783A6C66DA6F16236191 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F3D40DF1E5BBF29219C9E836 /* FormOrderRouterInput.h */,
+				BEF1C6D4A745EAB60D8B16D6 /* FormOrderRouter.h */,
+				03AC6B6A848771A808D84642 /* FormOrderRouter.m */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		991F588BA5C3FE0DACCEF9D1 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				026545E2509D676D869ED1F9 /* FormOrderInteractorInput.h */,
+				EA0916B50D098AFB922266A5 /* FormOrderInteractorOutput.h */,
+				28E9E6996A07C2F3E002B5FF /* FormOrderInteractor.h */,
+				2F10409A34656D0E134E377A /* FormOrderInteractor.m */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		A345DB213E5531B0CB957715 /* FormOrder */ = {
+			isa = PBXGroup;
+			children = (
+				FD59BD5C9ABA79006D476C92 /* Assembly */,
+				28492AB7061FB173362AA741 /* View */,
+				55C69C181F70F4E41726844A /* Presenter */,
+				991F588BA5C3FE0DACCEF9D1 /* Interactor */,
+				8B00783A6C66DA6F16236191 /* Router */,
+			);
+			path = FormOrder;
+			sourceTree = "<group>";
+		};
+		B07C23AA4E5BF7FF6C836769 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				A345DB213E5531B0CB957715 /* FormOrder */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		B7E4A1230B9DD43453FA454B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5B6AB53A99C1022923E45F48 /* libPods-DelLinTest.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FD59BD5C9ABA79006D476C92 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				E25E0B7C58012AF0309053FF /* FormOrderAssembly.h */,
+				5642838D9F6DD4E3BF038610 /* FormOrderAssembly.m */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7658367322BCCA25005E8D25 /* DelLinTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7658368D22BCCA29005E8D25 /* Build configuration list for PBXNativeTarget "DelLinTest" */;
+			buildPhases = (
+				82793385D7CB92EE467D9B71 /* [CP] Check Pods Manifest.lock */,
+				7658367022BCCA25005E8D25 /* Sources */,
+				7658367122BCCA25005E8D25 /* Frameworks */,
+				7658367222BCCA25005E8D25 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DelLinTest;
+			productName = DelLinTest;
+			productReference = 7658367422BCCA25005E8D25 /* DelLinTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7658366C22BCCA25005E8D25 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Dmitriy Verennik";
+				TargetAttributes = {
+					7658367322BCCA25005E8D25 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 7658366F22BCCA25005E8D25 /* Build configuration list for PBXProject "DelLinTest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7658366B22BCCA25005E8D25;
+			productRefGroup = 7658367522BCCA25005E8D25 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7658367322BCCA25005E8D25 /* DelLinTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7658367222BCCA25005E8D25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7658368722BCCA29005E8D25 /* LaunchScreen.storyboard in Resources */,
+				7658368422BCCA29005E8D25 /* Assets.xcassets in Resources */,
+				7658367F22BCCA25005E8D25 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		82793385D7CB92EE467D9B71 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DelLinTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7658367022BCCA25005E8D25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7658367C22BCCA25005E8D25 /* ViewController.m in Sources */,
+				7658367922BCCA25005E8D25 /* AppDelegate.m in Sources */,
+				7658368A22BCCA29005E8D25 /* main.m in Sources */,
+				7658368222BCCA25005E8D25 /* DelLinTest.xcdatamodeld in Sources */,
+				356445732D1B6C1E556364D1 /* FormOrderAssembly.m in Sources */,
+				79A299774C7AE1BBE68E51F3 /* FormOrderViewController.m in Sources */,
+				60270D7FB6BAC18FC16C4084 /* FormOrderPresenter.m in Sources */,
+				FBB828B5B2E8E824A72C567F /* FormOrderInteractor.m in Sources */,
+				73B3C86AD17FC189722B8281 /* FormOrderRouter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7658367D22BCCA25005E8D25 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7658367E22BCCA25005E8D25 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7658368522BCCA29005E8D25 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7658368622BCCA29005E8D25 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7658368B22BCCA29005E8D25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7658368C22BCCA29005E8D25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7658368E22BCCA29005E8D25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73832CB4D199B5340050AF8D /* Pods-DelLinTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C22RZK2BW2;
+				INFOPLIST_FILE = DelLinTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dverennik.DelLinTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7658368F22BCCA29005E8D25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA6776AFBA73CA3185C9C2AD /* Pods-DelLinTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C22RZK2BW2;
+				INFOPLIST_FILE = DelLinTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dverennik.DelLinTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7658366F22BCCA25005E8D25 /* Build configuration list for PBXProject "DelLinTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7658368B22BCCA29005E8D25 /* Debug */,
+				7658368C22BCCA29005E8D25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7658368D22BCCA29005E8D25 /* Build configuration list for PBXNativeTarget "DelLinTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7658368E22BCCA29005E8D25 /* Debug */,
+				7658368F22BCCA29005E8D25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7658368022BCCA25005E8D25 /* DelLinTest.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7658368122BCCA25005E8D25 /* DelLinTest.xcdatamodel */,
+			);
+			currentVersion = 7658368122BCCA25005E8D25 /* DelLinTest.xcdatamodel */;
+			path = DelLinTest.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7658366C22BCCA25005E8D25 /* Project object */;
+}
