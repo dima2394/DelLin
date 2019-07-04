@@ -1,16 +1,22 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+platform :ios, '11.0'
 
-target 'DelLinTest' do
-  # Comment the next line if you don't want to use dynamic frameworks
+inhibit_all_warnings!
 
-  # Pods for DelLinTest
+target 'DelLin' do
 
-pod 'Typhoon'
+# Pods for DelLin
 pod 'OCMock'
+pod 'Typhoon'
 pod 'RamblerTyphoonUtils'
 pod 'ViperMcFlurry'
 pod 'Framer'
 pod 'AFNetworking' 
+pod 'EasyMapping'
 
+end
+
+target 'DelLinTests' do
+  inherit! :search_paths
+  pod 'OCMock'
 end

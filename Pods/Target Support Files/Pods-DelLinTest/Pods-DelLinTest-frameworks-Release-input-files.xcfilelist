@@ -1,5 +1,0 @@
-${PODS_ROOT}/Target Support Files/Pods-DelLinTest/Pods-DelLinTest-frameworks.sh
-${BUILT_PRODUCTS_DIR}/OCMock/OCMock.framework
-${BUILT_PRODUCTS_DIR}/RamblerTyphoonUtils/RamblerTyphoonUtils.framework
-${BUILT_PRODUCTS_DIR}/Typhoon/Typhoon.framework
-${BUILT_PRODUCTS_DIR}/ViperMcFlurry/ViperMcFlurry.framework

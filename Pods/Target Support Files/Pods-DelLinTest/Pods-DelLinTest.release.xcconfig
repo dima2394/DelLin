@@ -1,9 +1,0 @@
-FRAMEWORK_SEARCH_PATHS = $(inherited) "$(PLATFORM_DIR)/Developer/Library/Frameworks"
-GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/Framer" "${PODS_ROOT}/Headers/Public/OCMock" "${PODS_ROOT}/Headers/Public/RamblerTyphoonUtils" "${PODS_ROOT}/Headers/Public/Typhoon" "${PODS_ROOT}/Headers/Public/ViperMcFlurry"
-LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking" "${PODS_CONFIGURATION_BUILD_DIR}/Framer" "${PODS_CONFIGURATION_BUILD_DIR}/OCMock" "${PODS_CONFIGURATION_BUILD_DIR}/RamblerTyphoonUtils" "${PODS_CONFIGURATION_BUILD_DIR}/Typhoon" "${PODS_CONFIGURATION_BUILD_DIR}/ViperMcFlurry"
-OTHER_LDFLAGS = $(inherited) -ObjC -l"AFNetworking" -l"Framer" -l"OCMock" -l"RamblerTyphoonUtils" -l"Typhoon" -l"ViperMcFlurry" -framework "CoreGraphics" -framework "MobileCoreServices" -framework "Security" -framework "SystemConfiguration" -framework "XCTest"
-PODS_BUILD_DIR = ${BUILD_DIR}
-PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
-PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
-PODS_ROOT = ${SRCROOT}/Pods
