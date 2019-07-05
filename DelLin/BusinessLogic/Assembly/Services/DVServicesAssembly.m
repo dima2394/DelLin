@@ -11,7 +11,7 @@
 
 @implementation DVServicesAssembly
 
-- (id<NetworkServiceProtocol>)networkService {
+- (id<NetworkService>)networkService {
     return [TyphoonDefinition withClass:[NetworkServiceImplementation class]];
 }
 

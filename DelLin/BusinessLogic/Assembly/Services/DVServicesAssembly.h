@@ -9,13 +9,13 @@
 #import <RamblerTyphoonUtils/AssemblyCollector.h>
 #import "TyphoonAssembly.h"
 
-@protocol NetworkServiceProtocol;
+@protocol NetworkService;
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DVServicesAssembly : TyphoonAssembly <RamblerInitialAssembly>
 
-- (id<NetworkServiceProtocol>)networkService;
+- (id<NetworkService>)networkService;
 
 @end
 

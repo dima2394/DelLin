@@ -18,7 +18,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface DVApplicationAssembly : TyphoonAssembly <RamblerInitialAssembly>
 
-@property (nonatomic, readonly) DVServicesAssembly *servicesAssembly;
 @property (nonatomic, readonly) FormOrderAssembly *formOrderAssembly;
 
 - (AppDelegate *)appDelegate;

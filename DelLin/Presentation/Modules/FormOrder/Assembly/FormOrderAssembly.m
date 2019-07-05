@@ -15,6 +15,8 @@
 
 #import <ViperMcFlurry/ViperMcFlurry.h>
 
+#import "DVServicesAssembly.h"
+
 @implementation FormOrderAssembly
 
 - (FormOrderViewController *)viewFormOrder {
@@ -32,6 +34,8 @@
                           configuration:^(TyphoonDefinition *definition) {
                               [definition injectProperty:@selector(output)
                                                     with:[self presenterFormOrder]];
+                              [definition injectProperty:@selector(networkService)
+                                                    with:[self.servicesAssembly networkService]];
                           }];
 }
 

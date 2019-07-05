@@ -24,6 +24,9 @@
 
 - (void)didTriggerViewReadyEvent {
 	[self.view setupInitialState];
+
+
+    NSLog(@"");
 }
 
 #pragma mark - Методы FormOrderInteractorOutput

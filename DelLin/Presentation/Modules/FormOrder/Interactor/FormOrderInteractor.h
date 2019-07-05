@@ -9,9 +9,11 @@
 #import "FormOrderInteractorInput.h"
 
 @protocol FormOrderInteractorOutput;
+@protocol NetworkService;
 
 @interface FormOrderInteractor : NSObject <FormOrderInteractorInput>
 
 @property (nonatomic, weak) id<FormOrderInteractorOutput> output;
+@property (nonatomic, weak) id<NetworkService> networkService;
 
 @end

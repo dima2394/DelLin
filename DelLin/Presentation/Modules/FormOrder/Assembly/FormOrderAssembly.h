@@ -9,6 +9,8 @@
 #import <Typhoon/Typhoon.h>
 #import <RamblerTyphoonUtils/AssemblyCollector.h>
 
+@class DVServicesAssembly;
+
 /**
  @author Dmitriy Verennik
 
@@ -18,6 +20,8 @@
 @class FormOrderViewController;
 
 @interface FormOrderAssembly : TyphoonAssembly <RamblerInitialAssembly>
+
+@property (nonatomic, readonly) DVServicesAssembly *servicesAssembly;
 
 - (FormOrderViewController *)viewFormOrder;
 

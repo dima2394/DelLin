@@ -3,3 +3,7 @@
 .DS_Store
 Templates/.DS_Store
 Templates/rviper_service/.DS_Store
+.DS_Store
+DelLin.xcworkspace/xcuserdata/dmitriyverennik.xcuserdatad/UserInterfaceState.xcuserstate
+*.xcbkptlist
+*.xcuserstate

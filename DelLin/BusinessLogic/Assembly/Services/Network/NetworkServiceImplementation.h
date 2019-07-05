@@ -10,4 +10,6 @@
 
 @interface NetworkServiceImplementation : NSObject <NetworkService>
 
+- (void)fetchTerminals;
+
 @end

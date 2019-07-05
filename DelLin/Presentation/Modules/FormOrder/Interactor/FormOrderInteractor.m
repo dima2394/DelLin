@@ -7,11 +7,15 @@
 //
 
 #import "FormOrderInteractor.h"
-
+#import "NetworkService.h"
 #import "FormOrderInteractorOutput.h"
 
 @implementation FormOrderInteractor
 
 #pragma mark - Методы FormOrderInteractorInput
+
+- (void)fetchTerminals {
+    [_networkService fetchTerminals];
+}
 
 @end
