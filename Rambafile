@@ -2,15 +2,15 @@
 company: dverennik
 
 ### Xcode project settings
-project_name: DelLinTest
-xcodeproj_path: DelLinTest.xcodeproj
+project_name: DelLin
+xcodeproj_path: DelLin.xcodeproj
 
 ### Code generation settings section
 # The main project target name
-project_target: DelLinTest
+project_target: DelLin
 
 # The Xcode group path to new modules
-project_group_path: DelLinTest/Presentation/Modules
+project_group_path: DelLin/Presentation/Modules
 
 ### Dependencies settings section
 

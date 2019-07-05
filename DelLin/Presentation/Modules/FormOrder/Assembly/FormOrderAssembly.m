@@ -6,16 +6,16 @@
 //  Copyright © 2019 dverennik. All rights reserved.
 //
 
+#import <ViperMcFlurry/ViperMcFlurry.h>
+
 #import "FormOrderAssembly.h"
+#import "DVServicesAssembly.h"
+#import "DVRoutesAssembly.h"
 
 #import "FormOrderViewController.h"
 #import "FormOrderInteractor.h"
 #import "FormOrderPresenter.h"
 #import "FormOrderRouter.h"
-
-#import <ViperMcFlurry/ViperMcFlurry.h>
-
-#import "DVServicesAssembly.h"
 
 @implementation FormOrderAssembly
 
@@ -56,6 +56,8 @@
                           configuration:^(TyphoonDefinition *definition) {
                               [definition injectProperty:@selector(transitionHandler)
                                                     with:[self viewFormOrder]];
+                              [definition injectProperty:@selector(terminalsRoute)
+                                                    with:[self.routesAssembly terminalsRoute]];
                           }];
 }
 

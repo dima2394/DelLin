@@ -8,10 +8,14 @@
 
 #import "FormOrderRouterInput.h"
 
+@class DVTerminalsRoute;
+
 @protocol RamblerViperModuleTransitionHandlerProtocol;
 
 @interface FormOrderRouter : NSObject <FormOrderRouterInput>
 
 @property (nonatomic, weak) id<RamblerViperModuleTransitionHandlerProtocol> transitionHandler;
+@property (nonatomic, strong) DVTerminalsRoute *terminalsRoute;
+
 
 @end

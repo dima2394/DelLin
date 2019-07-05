@@ -8,6 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
+@protocol RamblerViperModuleOutput;
+
+typedef void (^TransitionCompletionBlock)(id<RamblerViperModuleInput> input);
+
 @protocol FormOrderRouterInput <NSObject>
+
+- (void)openTerminalsModuleWithOutput:(id<RamblerViperModuleOutput>)output
+                        completion:(TransitionCompletionBlock)completion;
 
 @end
