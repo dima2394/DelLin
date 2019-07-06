@@ -17,7 +17,8 @@
     DVTerminalsEndpoint *endpoint = [DVTerminalsEndpoint new];
    [[AFHTTPSessionManager manager] dataTaskForEndpoint:endpoint
                                                success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable response) {
-                                                   NSDictionary *responseJSON = [NSJSONSerialization JSONObjectWithData:response options:NSJSONReadingMutableContainers error:nil];
+                                                   NSDictionary *responseJSON = [NSJSONSerialization JSONObjectWithData:response
+                                                                                                                options:NSJSONReadingMutableContainers error:nil];
                                                    NSMutableArray <DVCity *> *cities = [NSMutableArray new];
                                                    if ([responseJSON.allKeys containsObject:@"city"]) {
                                                        NSDictionary *citiesJSON = responseJSON[@"city"];

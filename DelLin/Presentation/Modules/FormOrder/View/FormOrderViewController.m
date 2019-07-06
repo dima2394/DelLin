@@ -45,7 +45,7 @@
 	[super viewDidLoad];
 
     [self.view setBackgroundColor:[UIColor whiteColor]];
-
+    [self.view addSubviews:@[_fromTextField, _toTextField]];
 	[self.output didTriggerViewReadyEvent];
 }
 

@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+#import "UIView+Sugar.h"
 #import "FormOrderViewInput.h"
 
 @protocol FormOrderViewOutput;
