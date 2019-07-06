@@ -25,13 +25,13 @@
 - (void)didTriggerViewReadyEvent {
 	[self.view setupInitialState];
 
-
-    NSLog(@"");
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [self.router openTerminalsModuleWithOutput:self completion:^(id<RamblerViperModuleInput> input) {
-            NSLog(@"");
-        }];
-    });
+    [self.interactor fetchTerminals];
+//    NSLog(@"");
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        [self.router openTerminalsModuleWithOutput:self completion:^(id<RamblerViperModuleInput> input) {
+//            NSLog(@"");
+//        }];
+//    });
 }
 
 #pragma mark - Методы FormOrderInteractorOutput

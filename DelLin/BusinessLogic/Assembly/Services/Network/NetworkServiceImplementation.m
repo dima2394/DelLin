@@ -16,9 +16,9 @@
     DVTerminalsEndpoint *endpoint = [DVTerminalsEndpoint new];
    [[AFHTTPSessionManager manager] dataTaskForEndpoint:endpoint
                                                success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable response) {
-
+                                                   NSLog(@"");
                                                } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-
+                                                   NSLog(@"");
                                                }];
     
 }

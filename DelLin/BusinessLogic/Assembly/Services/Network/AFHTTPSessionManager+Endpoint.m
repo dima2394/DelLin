@@ -11,18 +11,25 @@
 
 @implementation AFHTTPSessionManager (AFHTTPSessionManager_Endpoint)
 
-- (NSURLSessionDataTask *)dataTaskForEndpoint:(id<DVEndpointProtocol>)endpoint success:(void (^)(NSURLSessionDataTask * _Nonnull, id _Nullable))success failure:(void (^)(NSURLSessionDataTask * _Nullable, NSError * _Nonnull))failure {
+- (NSURLSessionDataTask *)dataTaskForEndpoint:(id<DVEndpointProtocol>)endpoint
+                                      success:(void (^)(NSURLSessionDataTask * _Nonnull, id _Nullable))success
+                                      failure:(void (^)(NSURLSessionDataTask * _Nullable, NSError * _Nonnull))failure {
 
+    AFHTTPSessionManager *manager = [[AFHTTPSessionManager manager] initWithBaseURL:endpoint.baseURL];
+    AFHTTPResponseSerializer *requestSerializer = [AFHTTPResponseSerializer serializer];
+    requestSerializer.acceptableContentTypes = [NSSet setWithObject:@"binary/octet-stream"];
+    manager.responseSerializer = requestSerializer;
 
-    NSURL *requestURL = [NSURL URLWithString:[NSString stringWithFormat:@"%@/%@", endpoint.baseURL, endpoint.path]];
-    return [[AFHTTPSessionManager manager] dataTaskWithHTTPMethod:endpoint.method
-                                                        URLString: requestURL.absoluteString
-                                                       parameters:endpoint.parameters
-                                                   uploadProgress:nil
-                                                 downloadProgress:nil
-                                                          success:success
-                                                          failure:failure];
+    NSURLSessionDataTask *dataTask = [manager dataTaskWithHTTPMethod:endpoint.method
+                                                           URLString:endpoint.path
+                                                          parameters:endpoint.parameters
+                                                      uploadProgress:nil
+                                                    downloadProgress:nil
+                                                             success:success
+                                                             failure:failure];
+    [dataTask resume];
 
+    return dataTask;
 }
 
 - (NSURLSessionDataTask *)dataTaskWithHTTPMethod:(NSString *)method
@@ -63,7 +70,5 @@
 
     return dataTask;
 }
-
-
 
 @end

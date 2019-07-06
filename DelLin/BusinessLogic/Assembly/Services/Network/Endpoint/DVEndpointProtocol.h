@@ -12,11 +12,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol DVEndpointProtocol <NSObject>
 
-@property(nonatomic) NSURL *baseURL;
-@property(nonatomic) NSString *path;
-@property(nonatomic) NSDictionary *headers;
-@property(nonatomic) NSDictionary *parameters;
-@property(nonatomic) NSString *method;
+@property(nonatomic, nonnull) NSURL *baseURL;
+@property(nonatomic, nonnull) NSString *path;
+@property(nonatomic, nullable) NSDictionary *headers;
+@property(nonatomic, nullable) NSDictionary *parameters;
+@property(nonatomic, nonnull) NSString *method;
 
 @end
 

@@ -17,19 +17,23 @@
 @synthesize method;
 
 - (NSURL *)baseURL {
-    return [NSURL URLWithString:@""];
+    return [NSURL URLWithString:@"https://api.dellin.ru/static/catalog"];
 }
 
 - (NSString *)path {
-    return @"";
+    return @"terminals_v3.json";
 }
 
 - (NSDictionary *)headers {
-    return [NSDictionary new];
+    return nil;
 }
 
 - (NSDictionary *)parameters {
-    return [NSDictionary new];
+    return nil;
+}
+
+- (NSString *)method {
+    return @"GET";
 }
 
 

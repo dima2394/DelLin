@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DelLin/BusinessLogic/Assembly/Services/Network/NetworkServiceImplementation.m"
-            timestampString = "584044364.309437"
+            timestampString = "584105219.108551"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "17"
@@ -25,40 +25,8 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "DelLin/Presentation/Modules/FormOrder/Interactor/FormOrderInteractor.m"
-            timestampString = "584051909.77692"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "18"
-            endingLineNumber = "18"
-            landmarkName = "-fetchTerminals"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "DelLin/Presentation/Modules/FormOrder/Presenter/FormOrderPresenter.m"
-            timestampString = "584051909.777"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
-            landmarkName = "-didTriggerViewReadyEvent"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "DelLin/Presentation/Modules/Terminals/View/TerminalsViewController.m"
-            timestampString = "584051909.777072"
+            timestampString = "584053321.227518"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "20"
@@ -73,13 +41,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Pods/ViperMcFlurry/Source/UIViewController+RamblerViperModuleTransitionHandlerProtocol.m"
-            timestampString = "584051596.391167"
+            filePath = "DelLin/BusinessLogic/Assembly/Services/Network/NetworkServiceImplementation.m"
+            timestampString = "584105219.108647"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "58"
-            endingLineNumber = "58"
-            landmarkName = "-openModuleUsingFactory:withTransitionBlock:"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "-fetchTerminals"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -89,29 +57,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Pods/ViperMcFlurry/Source/UIViewController+RamblerViperModuleTransitionHandlerProtocol.m"
-            timestampString = "584051596.391221"
+            filePath = "DelLin/BusinessLogic/Assembly/Services/Network/NetworkServiceImplementation.m"
+            timestampString = "584105219.108703"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
-            landmarkName = "-openModuleUsingFactory:withTransitionBlock:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "DelLin/Presentation/Modules/FormOrder/Router/FormOrderRouter.m"
-            timestampString = "584051909.7772059"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
-            landmarkName = "-openTerminalsModuleWithOutput:completion:"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "-fetchTerminals"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

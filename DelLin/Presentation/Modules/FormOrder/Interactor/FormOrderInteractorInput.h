@@ -10,4 +10,6 @@
 
 @protocol FormOrderInteractorInput <NSObject>
 
+- (void)fetchTerminals;
+
 @end
