@@ -15,7 +15,9 @@
 #pragma mark - Методы FormOrderInteractorInput
 
 - (void)fetchTerminals {
-    [_networkService fetchTerminals];
+    [_networkService fetchTerminalsWithCompletion:^(NSArray<DVCity *> * _Nullable cities, NSError * _Nullable error) {
+        
+    }];
 }
 
 @end

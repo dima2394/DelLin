@@ -6,7 +6,7 @@
 //  Copyright © 2019 dverennik. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+@import UIKit;
 
 #import "UIView+Sugar.h"
 #import "FormOrderViewInput.h"

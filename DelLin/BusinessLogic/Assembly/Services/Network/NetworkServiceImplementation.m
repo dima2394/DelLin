@@ -13,7 +13,7 @@
 
 @implementation NetworkServiceImplementation
 
-- (void)fetchTerminals {
+- (void)fetchTerminalsWithCompletion:(TerminalsCompletion)completion {
     DVTerminalsEndpoint *endpoint = [DVTerminalsEndpoint new];
    [[AFHTTPSessionManager manager] dataTaskForEndpoint:endpoint
                                                success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable response) {
@@ -28,8 +28,9 @@
                                                        }
                                                    }
                                                    NSLog(@"");
+                                                   completion(cities, nil);
                                                } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-                                                   NSLog(@"");
+                                                   completion(nil, error);
                                                }];
     
 }

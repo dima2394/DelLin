@@ -12,40 +12,40 @@
 
 @implementation FormOrderViewController
 
-#pragma mark - Lifecycle
-
-- (UITextField *)fromTextField {
-    if (!_fromTextField) {
-        _fromTextField = [UITextField new];
-        _fromTextField.delegate = self;
-    }
-    return _fromTextField;
-}
-
-- (UITextField *)toTextField {
-    if (!_toTextField) {
-        _toTextField = [UITextField new];
-        _toTextField.delegate = self;
-    }
-    return _toTextField;
-}
-
-- (UIButton *)saveButton {
-    if (_saveButton) {
-        _saveButton = [UIButton new];
-        [_saveButton setTitle: @"Сохранить" forState: UIControlStateNormal];
-        [_saveButton addTarget:self
-                        action:@selector(saveButtonPressed)
-              forControlEvents: UIControlEventTouchUpInside];
-    }
-    return _saveButton;
-}
+#pragma mark -  Lifecycle
 
 - (void)viewDidLoad {
 	[super viewDidLoad];
 
     [self.view setBackgroundColor:[UIColor whiteColor]];
-    [self.view addSubviews:@[_fromTextField, _toTextField]];
+
+    self.textFieldContainerView = [UIView new];
+
+    self.fromTextField = [UITextField new];
+    [self.fromTextField setPlaceholder:@"Откуда"];
+    [self.fromTextField setBorderStyle:UITextBorderStyleRoundedRect];
+    [self.fromTextField setDelegate:self];
+
+    self.toTextField = [UITextField new];
+    [self.toTextField setPlaceholder:@"Куда"];
+    [self.toTextField setBorderStyle:UITextBorderStyleRoundedRect];
+    [self.toTextField setDelegate: self];
+
+    self.saveButton = [UIButton new];
+    [self.saveButton setTitle: @"Сохранить" forState: UIControlStateNormal];
+    [self.saveButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+    [self.saveButton.layer setBorderWidth:1];
+    [self.saveButton.layer setBorderColor:[UIColor blueColor].CGColor];
+    [self.saveButton.layer setMasksToBounds:YES];
+    [self.saveButton.layer setCornerRadius:5];
+    [self.saveButton addTarget:self
+                   action:@selector(saveButtonPressed)
+         forControlEvents: UIControlEventTouchUpInside];
+
+    [self.view addSubview:self.textFieldContainerView];
+    [self.textFieldContainerView addSubview:self.fromTextField];
+    [self.textFieldContainerView addSubview:self.toTextField];
+    [self.view addSubview:self.saveButton];
 	[self.output didTriggerViewReadyEvent];
 }
 
@@ -53,12 +53,23 @@
     [super viewDidLayoutSubviews];
 
     [self.fromTextField installFrames:^(NUIFramer * _Nonnull maker) {
-        maker.width(100).height(100);
+        maker.top(0).left(0);
+        maker.width(200).height(60);
     }];
 
     [self.toTextField installFrames:^(NUIFramer * _Nonnull maker) {
-        maker.container().super_centerX(0);
-        maker.super_centerY(0);
+        maker.top_to(self.fromTextField.nui_bottom, 10).left_to(self.fromTextField.nui_left, 1);
+        maker.width_to(self.fromTextField.nui_width, 1).height_to(self.fromTextField.nui_height, 1);
+    }];
+
+    [self.textFieldContainerView installFrames:^(NUIFramer * _Nonnull maker) {
+        maker.container();
+        maker.super_centerX(0).super_centerY(0);
+    }];
+
+    [self.saveButton installFrames:^(NUIFramer * _Nonnull maker) {
+        maker.width_to(self.fromTextField.nui_width, 0.5).centerX_to(self.fromTextField.nui_centerX, 0);
+        maker.top_to(self.toTextField.nui_bottom, 10).height_to(self.fromTextField.nui_height, 1);
     }];
 }
 

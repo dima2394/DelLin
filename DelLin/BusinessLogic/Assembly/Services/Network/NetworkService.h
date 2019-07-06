@@ -6,13 +6,17 @@
 //  Copyright © 2019 dverennik. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+@import Foundation;
 
 NS_ASSUME_NONNULL_BEGIN
 
+@class DVCity;
+
+typedef void (^TerminalsCompletion)(NSArray<DVCity *> * _Nullable cities, NSError * __nullable error);
+
 @protocol NetworkService <NSObject>
 
-- (void)fetchTerminals;
+- (void)fetchTerminalsWithCompletion:(TerminalsCompletion) completion;
 
 @end
 

@@ -362,12 +362,12 @@
 				76E521FB22CE17690078C988 /* Map+CoreDataClass.h */,
 				76E521FC22CE17690078C988 /* Map+CoreDataClass.m */,
 				76E521FD22CE17690078C988 /* Map+CoreDataProperties.m */,
+				7644DFF222D0C76C00FBD451 /* DVCity.h */,
+				7644DFF322D0C76C00FBD451 /* DVCity.m */,
 				768B5D3322CDF4C700A41198 /* DVTerminal.h */,
 				768B5D3422CDF4C700A41198 /* DVTerminal.m */,
 				768B5D3622CDFDA000A41198 /* DVMap.h */,
 				768B5D3722CDFDA000A41198 /* DVMap.m */,
-				7644DFF222D0C76C00FBD451 /* DVCity.h */,
-				7644DFF322D0C76C00FBD451 /* DVCity.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";

@@ -21,7 +21,6 @@
                                       @"requestEndTime",
                                       @"sfrequestEndTime",
                                       ]];
-//    [mapping mapKeyPath:@"id" toProperty:@"_id"]
 
     return mapping;
 }
