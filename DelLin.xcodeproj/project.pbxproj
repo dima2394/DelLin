@@ -17,6 +17,7 @@
 		73B3C86AD17FC189722B8281 /* FormOrderRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 03AC6B6A848771A808D84642 /* FormOrderRouter.m */; };
 		760EF78822CFE2F200548A87 /* DVRoutesAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 760EF78622CFE2F200548A87 /* DVRoutesAssembly.m */; };
 		760EF78922CFE2F200548A87 /* DVTerminalsRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 760EF78722CFE2F200548A87 /* DVTerminalsRoute.m */; };
+		7644DFF422D0C76C00FBD451 /* DVCity.m in Sources */ = {isa = PBXBuildFile; fileRef = 7644DFF322D0C76C00FBD451 /* DVCity.m */; };
 		7658367922BCCA25005E8D25 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7658367822BCCA25005E8D25 /* AppDelegate.m */; };
 		7658368422BCCA29005E8D25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7658368322BCCA29005E8D25 /* Assets.xcassets */; };
 		7658368722BCCA29005E8D25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7658368522BCCA29005E8D25 /* LaunchScreen.storyboard */; };
@@ -80,6 +81,8 @@
 		760EF78522CFE2F200548A87 /* RouteProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RouteProtocol.h; sourceTree = "<group>"; };
 		760EF78622CFE2F200548A87 /* DVRoutesAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVRoutesAssembly.m; sourceTree = "<group>"; };
 		760EF78722CFE2F200548A87 /* DVTerminalsRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVTerminalsRoute.m; sourceTree = "<group>"; };
+		7644DFF222D0C76C00FBD451 /* DVCity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DVCity.h; sourceTree = "<group>"; };
+		7644DFF322D0C76C00FBD451 /* DVCity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DVCity.m; sourceTree = "<group>"; };
 		7658367422BCCA25005E8D25 /* DelLin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DelLin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7658367722BCCA25005E8D25 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7658367822BCCA25005E8D25 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -358,6 +361,8 @@
 				768B5D3422CDF4C700A41198 /* DVTerminal.m */,
 				768B5D3622CDFDA000A41198 /* DVMap.h */,
 				768B5D3722CDFDA000A41198 /* DVMap.m */,
+				7644DFF222D0C76C00FBD451 /* DVCity.h */,
+				7644DFF322D0C76C00FBD451 /* DVCity.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -645,6 +650,7 @@
 				768B5D3522CDF4C700A41198 /* DVTerminal.m in Sources */,
 				79A299774C7AE1BBE68E51F3 /* FormOrderViewController.m in Sources */,
 				768B5D3822CDFDA000A41198 /* DVMap.m in Sources */,
+				7644DFF422D0C76C00FBD451 /* DVCity.m in Sources */,
 				60270D7FB6BAC18FC16C4084 /* FormOrderPresenter.m in Sources */,
 				6DEC176222BD1F2C0065AEE9 /* DVApplicationAssembly.m in Sources */,
 				FBB828B5B2E8E824A72C567F /* FormOrderInteractor.m in Sources */,

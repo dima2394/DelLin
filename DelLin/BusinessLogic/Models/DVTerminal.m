@@ -11,8 +11,20 @@
 @implementation DVTerminal
 
 
-//+ (nonnull EKManagedObjectMapping *)objectMapping {
-//
-//}
++ (nonnull EKObjectMapping *)objectMapping {
+    EKObjectMapping *mapping = [[EKObjectMapping alloc] initWithObjectClass:[self class]];
+
+    [mapping mapPropertiesFromArray:@[@"id",
+                                      @"name",
+                                      @"address",
+                                      @"longitude",
+                                      @"latitude",
+                                      ]];
+    [mapping mapKeyPath:@"default" toProperty:@"isDefault"];
+    [mapping mapKeyPath:@"giveoutCargo" toProperty:@"isGiveoutCargo"];
+    [mapping mapKeyPath:@"receiveCargo" toProperty:@"isReceiveCargo"];
+
+    return mapping;
+}
 
 @end

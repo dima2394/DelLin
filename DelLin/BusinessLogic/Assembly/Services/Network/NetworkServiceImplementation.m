@@ -9,6 +9,7 @@
 #import "NetworkServiceImplementation.h"
 #import "Endpoint/DVTerminalsEndpoint.h"
 #import "AFHTTPSessionManager+Endpoint.h"
+#import "DVCity.h"
 
 @implementation NetworkServiceImplementation
 
@@ -16,6 +17,15 @@
     DVTerminalsEndpoint *endpoint = [DVTerminalsEndpoint new];
    [[AFHTTPSessionManager manager] dataTaskForEndpoint:endpoint
                                                success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable response) {
+                                                   NSDictionary *responseJSON = [NSJSONSerialization JSONObjectWithData:response options:NSJSONReadingMutableContainers error:nil];
+                                                   NSMutableArray <DVCity *> *cities = [NSMutableArray new];
+                                                   if ([responseJSON.allKeys containsObject:@"city"]) {
+                                                       NSDictionary *citiesJSON = responseJSON[@"city"];
+                                                       for (NSDictionary *cityJSON in citiesJSON) {
+                                                           DVCity *city = [[DVCity alloc] initWithProperties:cityJSON];
+                                                           [cities addObject:city];
+                                                       }
+                                                   }
                                                    NSLog(@"");
                                                } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
                                                    NSLog(@"");

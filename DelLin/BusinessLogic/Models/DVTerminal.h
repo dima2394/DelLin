@@ -12,17 +12,19 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DVTerminal : NSObject <EKManagedMappingProtocol>
+@interface DVTerminal : NSObject <EKMappingProtocol>
+
++ (EKObjectMapping *)objectMapping;
 
 @property (assign) NSInteger id;
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSString *address;
 @property (assign) float latitude;
-@property (assign) float longtitude;
-@property (assign) BOOL isReceiveCargo;
-@property (assign) BOOL isGiveoutCargo;
-@property (assign) BOOL isDefault;
-@property (nonatomic, strong) DVMap *map;
+@property (assign) float longitude;
+@property (nonatomic) BOOL isReceiveCargo;
+@property (nonatomic) BOOL isGiveoutCargo;
+@property (nonatomic) BOOL isDefault;
+@property (assign) DVMap *map;
 
 @end
 
