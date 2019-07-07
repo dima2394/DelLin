@@ -24,7 +24,7 @@
                                                               completion:nil];
     }];
 
-    [promise thenChainUsingBlock:^id<RamblerViperModuleOutput>(id<RamblerViperModuleInput> moduleInput) {
+    [promise thenChainUsingBlock:^id<RamblerViperModuleOutput> (id<RamblerViperModuleInput> moduleInput) {
         completion(moduleInput);
         return output;
     }];

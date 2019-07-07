@@ -10,10 +10,13 @@
 
 @protocol FormOrderInteractorOutput;
 @protocol NetworkService;
+@protocol StorageService;
 
 @interface FormOrderInteractor : NSObject <FormOrderInteractorInput>
 
 @property (nonatomic, weak) id<FormOrderInteractorOutput> output;
-@property (nonatomic, weak) id<NetworkService> networkService;
+@property (nonatomic, strong) id<NetworkService> networkService;
+@property (nonatomic, strong) id<StorageService> storageService;
+
 
 @end

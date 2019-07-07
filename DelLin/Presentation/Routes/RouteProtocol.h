@@ -10,6 +10,4 @@
 
 @protocol RouteProtocol <NSObject>
 
-- (void)openModule;
-
 @end

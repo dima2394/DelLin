@@ -10,8 +10,4 @@
 
 @implementation DVTerminalsRoute
 
-- (void)openModule {
-    
-}
-
 @end

@@ -14,21 +14,18 @@
 
 @implementation FormOrderPresenter
 
-#pragma mark - Методы FormOrderModuleInput
+#pragma mark -  FormOrderModuleInput
 
 - (void)configureModule {
     // Стартовая конфигурация модуля, не привязанная к состоянию view
 }
 
-#pragma mark - Методы FormOrderViewOutput
+#pragma mark -  FormOrderViewOutput
 
 - (void)didTriggerViewReadyEvent {
 	[self.view setupInitialState];
 
     [self.interactor fetchTerminals];
-//    NSLog(@"");
-//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-//    });
 }
 
 - (void)didRequestNavigationWithFromSelection {
@@ -37,14 +34,16 @@
     }];
 }
 
-
 - (void)didRequestNavigationWithToSelection {
     [self.router openTerminalsModuleWithOutput:self completion:^(id<RamblerViperModuleInput> input) {
         NSLog(@"FROM");
     }];
 }
 
+#pragma mark -  FormOrderInteractorOutput
 
-#pragma mark - Методы FormOrderInteractorOutput
+- (void)fromOrderInteractorDidFinishFetchingTerminalsWith:(NSArray<DVCity *> *)cities {
+    NSLog(@"");
+}
 
 @end

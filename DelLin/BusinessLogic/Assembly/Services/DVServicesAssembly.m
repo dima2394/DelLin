@@ -8,11 +8,20 @@
 
 #import "DVServicesAssembly.h"
 #import "NetworkServiceImplementation.h"
+#import "StorageServiceImplementation.h"
+#import "AppDelegate.h"
 
 @implementation DVServicesAssembly
 
 - (id<NetworkService>)networkService {
     return [TyphoonDefinition withClass:[NetworkServiceImplementation class]];
 }
+
+- (id<StorageService>)storageService {
+    return [TyphoonDefinition withClass:[StorageServiceImplementation class] configuration:^(TyphoonDefinition *definition) {
+        [definition injectProperty:@selector(context) with:[(AppDelegate *)[UIApplication sharedApplication].delegate managedObjectContext]];
+    }];
+}
+
 
 @end

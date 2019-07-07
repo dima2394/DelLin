@@ -19,6 +19,7 @@
 		760EF78922CFE2F200548A87 /* DVTerminalsRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 760EF78722CFE2F200548A87 /* DVTerminalsRoute.m */; };
 		7644DFF422D0C76C00FBD451 /* DVCity.m in Sources */ = {isa = PBXBuildFile; fileRef = 7644DFF322D0C76C00FBD451 /* DVCity.m */; };
 		7644DFF722D0D97B00FBD451 /* UIView+Sugar.m in Sources */ = {isa = PBXBuildFile; fileRef = 7644DFF622D0D97B00FBD451 /* UIView+Sugar.m */; };
+		7644DFFB22D26CF900FBD451 /* StorageServiceImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7644DFFA22D26CF900FBD451 /* StorageServiceImplementation.m */; };
 		7658367922BCCA25005E8D25 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7658367822BCCA25005E8D25 /* AppDelegate.m */; };
 		7658368422BCCA29005E8D25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7658368322BCCA29005E8D25 /* Assets.xcassets */; };
 		7658368722BCCA29005E8D25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7658368522BCCA29005E8D25 /* LaunchScreen.storyboard */; };
@@ -86,6 +87,9 @@
 		7644DFF322D0C76C00FBD451 /* DVCity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DVCity.m; sourceTree = "<group>"; };
 		7644DFF522D0D97B00FBD451 /* UIView+Sugar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Sugar.h"; sourceTree = "<group>"; };
 		7644DFF622D0D97B00FBD451 /* UIView+Sugar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Sugar.m"; sourceTree = "<group>"; };
+		7644DFF922D26CF900FBD451 /* StorageServiceImplementation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StorageServiceImplementation.h; sourceTree = "<group>"; };
+		7644DFFA22D26CF900FBD451 /* StorageServiceImplementation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StorageServiceImplementation.m; sourceTree = "<group>"; };
+		7644DFFC22D26D3500FBD451 /* StorageService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StorageService.h; sourceTree = "<group>"; };
 		7658367422BCCA25005E8D25 /* DelLin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DelLin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7658367722BCCA25005E8D25 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7658367822BCCA25005E8D25 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -261,6 +265,7 @@
 		6DEC175E22BD1ED40065AEE9 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				7644DFF822D26CD500FBD451 /* Storage */,
 				189448BFC44446C6E5537A40 /* Network */,
 				76F2824B22BCE7CE00A0D635 /* DVServicesAssembly.h */,
 				76F2824C22BCE7CE00A0D635 /* DVServicesAssembly.m */,
@@ -314,6 +319,16 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		7644DFF822D26CD500FBD451 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				7644DFFC22D26D3500FBD451 /* StorageService.h */,
+				7644DFF922D26CF900FBD451 /* StorageServiceImplementation.h */,
+				7644DFFA22D26CF900FBD451 /* StorageServiceImplementation.m */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
 		7658366B22BCCA25005E8D25 = {
 			isa = PBXGroup;
 			children = (
@@ -346,7 +361,7 @@
 				7658368522BCCA29005E8D25 /* LaunchScreen.storyboard */,
 				7658368822BCCA29005E8D25 /* Info.plist */,
 				7658368922BCCA29005E8D25 /* main.m */,
-				7658368022BCCA25005E8D25 /* DelLinTest.xcdatamodeld */,
+				7658368022BCCA25005E8D25 /* DelLin.xcdatamodeld */,
 			);
 			path = DelLin;
 			sourceTree = "<group>";
@@ -354,14 +369,14 @@
 		768B5D3222CDF4AD00A41198 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				76E521F622CE17690078C988 /* Terminal+CoreDataProperties.h */,
 				76E521F722CE17690078C988 /* Terminal+CoreDataClass.h */,
 				76E521F822CE17690078C988 /* Terminal+CoreDataClass.m */,
+				76E521F622CE17690078C988 /* Terminal+CoreDataProperties.h */,
 				76E521F922CE17690078C988 /* Terminal+CoreDataProperties.m */,
 				76E521FA22CE17690078C988 /* Map+CoreDataProperties.h */,
+				76E521FD22CE17690078C988 /* Map+CoreDataProperties.m */,
 				76E521FB22CE17690078C988 /* Map+CoreDataClass.h */,
 				76E521FC22CE17690078C988 /* Map+CoreDataClass.m */,
-				76E521FD22CE17690078C988 /* Map+CoreDataProperties.m */,
 				7644DFF222D0C76C00FBD451 /* DVCity.h */,
 				7644DFF322D0C76C00FBD451 /* DVCity.m */,
 				768B5D3322CDF4C700A41198 /* DVTerminal.h */,
@@ -655,6 +670,7 @@
 				768B5D3522CDF4C700A41198 /* DVTerminal.m in Sources */,
 				7644DFF722D0D97B00FBD451 /* UIView+Sugar.m in Sources */,
 				79A299774C7AE1BBE68E51F3 /* FormOrderViewController.m in Sources */,
+				7644DFFB22D26CF900FBD451 /* StorageServiceImplementation.m in Sources */,
 				768B5D3822CDFDA000A41198 /* DVMap.m in Sources */,
 				7644DFF422D0C76C00FBD451 /* DVCity.m in Sources */,
 				60270D7FB6BAC18FC16C4084 /* FormOrderPresenter.m in Sources */,
@@ -966,13 +982,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		7658368022BCCA25005E8D25 /* DelLinTest.xcdatamodeld */ = {
+		7658368022BCCA25005E8D25 /* DelLin.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				7658368122BCCA25005E8D25 /* DelLinTest.xcdatamodel */,
 			);
 			currentVersion = 7658368122BCCA25005E8D25 /* DelLinTest.xcdatamodel */;
-			path = DelLinTest.xcdatamodeld;
+			path = DelLin.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

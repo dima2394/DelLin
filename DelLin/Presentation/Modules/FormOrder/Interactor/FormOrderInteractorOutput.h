@@ -8,6 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
+@class DVCity;
+
 @protocol FormOrderInteractorOutput <NSObject>
+
+- (void)fromOrderInteractorDidFinishFetchingTerminals;
+- (void)fromOrderInteractorDidFinishFetchingTerminalsWithError:(NSError *)error;
 
 @end

@@ -36,6 +36,8 @@
                                                     with:[self presenterFormOrder]];
                               [definition injectProperty:@selector(networkService)
                                                     with:[self.servicesAssembly networkService]];
+                              [definition injectProperty:@selector(storageService)
+                                                    with:[self.servicesAssembly storageService]];
                           }];
 }
 

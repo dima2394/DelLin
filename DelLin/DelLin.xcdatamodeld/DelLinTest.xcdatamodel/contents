@@ -18,7 +18,7 @@
         <relationship name="map" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Map" syncable="YES"/>
     </entity>
     <elements>
+        <element name="Map" positionX="314.296875" positionY="98.7734375" width="128" height="105"/>
         <element name="Terminal" positionX="-63" positionY="-18" width="128" height="178"/>
-        <element name="Map" positionX="-54" positionY="54" width="128" height="105"/>
     </elements>
 </model>
