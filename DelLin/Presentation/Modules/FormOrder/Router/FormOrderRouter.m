@@ -20,7 +20,8 @@
     RamblerViperOpenModulePromise *promise = [self.transitionHandler openModuleUsingFactory:self.terminalsRoute.moduleFactory withTransitionBlock:^(id<RamblerViperModuleTransitionHandlerProtocol> sourceModuleTransitionHandler, id<RamblerViperModuleTransitionHandlerProtocol> destinationModuleTransitionHandler) {
         UIViewController *sourceViewController = (id)sourceModuleTransitionHandler;
         UIViewController *destinationViewController = (id)destinationModuleTransitionHandler;
-        [sourceViewController presentViewController:destinationViewController animated:YES completion:nil];
+        [sourceViewController.navigationController presentViewController:destinationViewController animated:YES
+                                                              completion:nil];
     }];
 
     [promise thenChainUsingBlock:^id<RamblerViperModuleOutput>(id<RamblerViperModuleInput> moduleInput) {

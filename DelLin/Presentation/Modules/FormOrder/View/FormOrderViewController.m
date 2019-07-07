@@ -17,35 +17,6 @@
 - (void)viewDidLoad {
 	[super viewDidLoad];
 
-    [self.view setBackgroundColor:[UIColor whiteColor]];
-
-    self.textFieldContainerView = [UIView new];
-
-    self.fromTextField = [UITextField new];
-    [self.fromTextField setPlaceholder:@"Откуда"];
-    [self.fromTextField setBorderStyle:UITextBorderStyleRoundedRect];
-    [self.fromTextField setDelegate:self];
-
-    self.toTextField = [UITextField new];
-    [self.toTextField setPlaceholder:@"Куда"];
-    [self.toTextField setBorderStyle:UITextBorderStyleRoundedRect];
-    [self.toTextField setDelegate: self];
-
-    self.saveButton = [UIButton new];
-    [self.saveButton setTitle: @"Сохранить" forState: UIControlStateNormal];
-    [self.saveButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
-    [self.saveButton.layer setBorderWidth:1];
-    [self.saveButton.layer setBorderColor:[UIColor blueColor].CGColor];
-    [self.saveButton.layer setMasksToBounds:YES];
-    [self.saveButton.layer setCornerRadius:5];
-    [self.saveButton addTarget:self
-                   action:@selector(saveButtonPressed)
-         forControlEvents: UIControlEventTouchUpInside];
-
-    [self.view addSubview:self.textFieldContainerView];
-    [self.textFieldContainerView addSubview:self.fromTextField];
-    [self.textFieldContainerView addSubview:self.toTextField];
-    [self.view addSubview:self.saveButton];
 	[self.output didTriggerViewReadyEvent];
 }
 
@@ -77,6 +48,36 @@
 
 - (void)setupInitialState {
 	// В этом методе происходит настройка параметров view, зависящих от ее жизненого цикла (создание элементов, анимации и пр.)
+    [self.view setBackgroundColor:[UIColor whiteColor]];
+
+    self.textFieldContainerView = [UIView new];
+
+    self.fromTextField = [UITextField new];
+    [self.fromTextField setPlaceholder:@"Откуда"];
+    [self.fromTextField setBorderStyle:UITextBorderStyleRoundedRect];
+    [self.fromTextField setDelegate:self];
+
+    self.toTextField = [UITextField new];
+    [self.toTextField setPlaceholder:@"Куда"];
+    [self.toTextField setBorderStyle:UITextBorderStyleRoundedRect];
+    [self.toTextField setDelegate: self];
+
+    self.saveButton = [UIButton new];
+    [self.saveButton setTitle: @"Сохранить" forState: UIControlStateNormal];
+    [self.saveButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+    [self.saveButton.layer setBorderWidth:1];
+    [self.saveButton.layer setBorderColor:[UIColor blueColor].CGColor];
+    [self.saveButton.layer setMasksToBounds:YES];
+    [self.saveButton.layer setCornerRadius:5];
+    [self.saveButton addTarget:self
+                        action:@selector(saveButtonPressed)
+              forControlEvents: UIControlEventTouchUpInside];
+
+    [self.view addSubview:self.textFieldContainerView];
+    [self.view addSubview:self.saveButton];
+
+    [self.textFieldContainerView addSubview:self.fromTextField];
+    [self.textFieldContainerView addSubview:self.toTextField];
 }
 
 #pragma mark -  Actions
@@ -88,15 +89,15 @@
 #pragma mark -  UITextFieldDelegate
 
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField {
-    return YES;
-}
+    if ([textField isEqual:self.fromTextField]) {
+        [self.output didRequestNavigationWithFromSelection];
+    }
 
-- (void)textFieldDidBeginEditing:(UITextField *)textField {
+    if ([textField isEqual:self.toTextField]) {
+        [self.output didRequestNavigationWithToSelection];
+    }
 
-}
-
-- (void)textFieldDidEndEditing:(UITextField *)textField {
-
+    return NO;
 }
 
 @end

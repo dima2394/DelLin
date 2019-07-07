@@ -11,11 +11,8 @@
 
 @protocol FormOrderViewOutput <NSObject, RamblerViperModuleOutput>
 
-/**
- @author Dmitriy Verennik
-
- Метод сообщает презентеру о том, что view готова к работе
- */
 - (void)didTriggerViewReadyEvent;
+- (void)didRequestNavigationWithFromSelection;
+- (void)didRequestNavigationWithToSelection;
 
 @end
