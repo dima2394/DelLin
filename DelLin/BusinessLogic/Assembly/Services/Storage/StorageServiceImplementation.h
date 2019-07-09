@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface StorageServiceImplementation : NSObject <StorageService>
 
-@property (nonatomic, strong) NSManagedObjectContext *context;
+@property (nonatomic, strong) NSPersistentContainer *persistentContainer;
 
 @end
 

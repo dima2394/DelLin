@@ -19,7 +19,7 @@
 
 - (id<StorageService>)storageService {
     return [TyphoonDefinition withClass:[StorageServiceImplementation class] configuration:^(TyphoonDefinition *definition) {
-        [definition injectProperty:@selector(context) with:[(AppDelegate *)[UIApplication sharedApplication].delegate managedObjectContext]];
+        [definition injectProperty:@selector(persistentContainer) with:[self.coreComponentsAssembly persistentContainer]];
     }];
 }
 

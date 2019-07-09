@@ -9,16 +9,16 @@
 #import <UIKit/UIKit.h>
 #import <RamblerTyphoonUtils/AssemblyCollector.h>
 #import "TyphoonAssembly.h"
-#import "DVServicesAssembly.h"
 #import "AppDelegate.h"
 #import "FormOrderAssembly.h"
-
+#import "CoreComponents.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DVApplicationAssembly : TyphoonAssembly <RamblerInitialAssembly>
 
 @property (nonatomic, readonly) FormOrderAssembly *formOrderAssembly;
+@property (nonatomic, readonly) CoreComponents *coreComponentsAssembly;
 
 - (AppDelegate *)appDelegate;
 - (UINavigationController *)rootViewController;

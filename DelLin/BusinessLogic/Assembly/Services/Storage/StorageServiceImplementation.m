@@ -15,7 +15,7 @@
 - (void)saveTerminalsWith:(NSArray<DVTerminal *> *)terminals {
 
     for (DVTerminal *terminal in terminals) {
-        Terminal *savingTerminal = [NSEntityDescription insertNewObjectForEntityForName:@"Terminal" inManagedObjectContext:self.context];
+        Terminal *savingTerminal = [NSEntityDescription insertNewObjectForEntityForName:@"Terminal" inManagedObjectContext:self.persistentContainer.viewContext];
         savingTerminal.id = (int)terminal.id;
         savingTerminal.name = terminal.name;
         savingTerminal.address = terminal.address;
@@ -24,13 +24,13 @@
         savingTerminal.isReceiveCargo = terminal.isReceiveCargo;
         savingTerminal.isDefault = terminal.isDefault;
         savingTerminal.isGiveoutCargo = terminal.isGiveoutCargo;
-        [self.context save:nil];
+        [self.persistentContainer.viewContext save:nil];
     }
 }
 
 - (NSArray<Terminal *> *)fetchFromTerminals {
     NSFetchRequest *request = [[NSFetchRequest alloc]initWithEntityName:@"Terminal"];
-    NSArray<Terminal *> *terminals = [[self.context executeFetchRequest:request error:nil] mutableCopy];
+    NSArray<Terminal *> *terminals = [[self.persistentContainer.viewContext executeFetchRequest:request error:nil] mutableCopy];
     return terminals;
 }
 
