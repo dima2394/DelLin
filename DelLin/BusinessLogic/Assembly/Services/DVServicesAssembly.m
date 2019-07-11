@@ -19,7 +19,8 @@
 
 - (id<StorageService>)storageService {
     return [TyphoonDefinition withClass:[StorageServiceImplementation class] configuration:^(TyphoonDefinition *definition) {
-        [definition injectProperty:@selector(persistentContainer) with:[self.coreComponentsAssembly persistentContainer]];
+//        [definition injectProperty:@selector(persistentContainer) with:[self.coreComponentsAssembly persistentContainer]];
+        [definition injectProperty:@selector(managedObjectContext) with:[self.coreComponentsAssembly managedObjectContext]];
     }];
 }
 

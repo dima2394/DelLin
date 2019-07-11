@@ -8,7 +8,7 @@
 
 #import <RamblerTyphoonUtils/AssemblyCollector.h>
 #import "TyphoonAssembly.h"
-#import "CoreComponents.h"
+#import "DVCoreComponentsAssembly.h"
 
 @protocol NetworkService;
 @protocol StorageService;
@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface DVServicesAssembly : TyphoonAssembly <RamblerInitialAssembly>
 
-@property (nonatomic, readonly) CoreComponents *coreComponentsAssembly;
+@property (nonatomic, readonly) DVCoreComponentsAssembly *coreComponentsAssembly;
 
 - (id<NetworkService>)networkService;
 - (id<StorageService>)storageService;
