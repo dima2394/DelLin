@@ -23,14 +23,14 @@
 - (void)viewDidLayoutSubviews {
     [super viewDidLayoutSubviews];
 
-    [self.fromTextField installFrames:^(NUIFramer * _Nonnull maker) {
+    [self.departureTextField installFrames:^(NUIFramer * _Nonnull maker) {
         maker.top(0).left(0);
         maker.width(200).height(60);
     }];
 
-    [self.toTextField installFrames:^(NUIFramer * _Nonnull maker) {
-        maker.top_to(self.fromTextField.nui_bottom, 10).left_to(self.fromTextField.nui_left, 1);
-        maker.width_to(self.fromTextField.nui_width, 1).height_to(self.fromTextField.nui_height, 1);
+    [self.destinationTextField installFrames:^(NUIFramer * _Nonnull maker) {
+        maker.top_to(self.departureTextField.nui_bottom, 10).left_to(self.departureTextField.nui_left, 1);
+        maker.width_to(self.departureTextField.nui_width, 1).height_to(self.departureTextField.nui_height, 1);
     }];
 
     [self.textFieldContainerView installFrames:^(NUIFramer * _Nonnull maker) {
@@ -39,8 +39,8 @@
     }];
 
     [self.saveButton installFrames:^(NUIFramer * _Nonnull maker) {
-        maker.width_to(self.fromTextField.nui_width, 0.5).centerX_to(self.fromTextField.nui_centerX, 0);
-        maker.top_to(self.toTextField.nui_bottom, 10).height_to(self.fromTextField.nui_height, 1);
+        maker.width_to(self.departureTextField.nui_width, 0.5).centerX_to(self.departureTextField.nui_centerX, 0);
+        maker.top_to(self.destinationTextField.nui_bottom, 10).height_to(self.departureTextField.nui_height, 1);
     }];
 }
 
@@ -52,15 +52,15 @@
 
     self.textFieldContainerView = [UIView new];
 
-    self.fromTextField = [UITextField new];
-    [self.fromTextField setPlaceholder:@"Откуда"];
-    [self.fromTextField setBorderStyle:UITextBorderStyleRoundedRect];
-    [self.fromTextField setDelegate:self];
+    self.departureTextField = [UITextField new];
+    [self.departureTextField setPlaceholder:@"Откуда"];
+    [self.departureTextField setBorderStyle:UITextBorderStyleRoundedRect];
+    [self.departureTextField setDelegate:self];
 
-    self.toTextField = [UITextField new];
-    [self.toTextField setPlaceholder:@"Куда"];
-    [self.toTextField setBorderStyle:UITextBorderStyleRoundedRect];
-    [self.toTextField setDelegate: self];
+    self.destinationTextField = [UITextField new];
+    [self.destinationTextField setPlaceholder:@"Куда"];
+    [self.destinationTextField setBorderStyle:UITextBorderStyleRoundedRect];
+    [self.destinationTextField setDelegate: self];
 
     self.saveButton = [UIButton new];
     [self.saveButton setTitle: @"Сохранить" forState: UIControlStateNormal];
@@ -76,8 +76,8 @@
     [self.view addSubview:self.textFieldContainerView];
     [self.view addSubview:self.saveButton];
 
-    [self.textFieldContainerView addSubview:self.fromTextField];
-    [self.textFieldContainerView addSubview:self.toTextField];
+    [self.textFieldContainerView addSubview:self.departureTextField];
+    [self.textFieldContainerView addSubview:self.destinationTextField];
 }
 
 #pragma mark -  Actions
@@ -89,11 +89,11 @@
 #pragma mark -  UITextFieldDelegate
 
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField {
-    if ([textField isEqual:self.fromTextField]) {
+    if ([textField isEqual:self.departureTextField]) {
         [self.output didRequestNavigationWithFromSelection];
     }
 
-    if ([textField isEqual:self.toTextField]) {
+    if ([textField isEqual:self.destinationTextField]) {
         [self.output didRequestNavigationWithToSelection];
     }
 

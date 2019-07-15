@@ -2,7 +2,7 @@
 //  Terminal+CoreDataProperties.m
 //  DelLin
 //
-//  Created by Dmitriy Verennik on 04/07/2019.
+//  Created by Dmitriy Verennik on 15/07/2019.
 //  Copyright © 2019 Dmitriy Verennik. All rights reserved.
 //
 //
@@ -15,14 +15,14 @@
 	return [NSFetchRequest fetchRequestWithEntityName:@"Terminal"];
 }
 
-@dynamic address;
 @dynamic id;
+@dynamic address;
 @dynamic isDefault;
 @dynamic isGiveoutCargo;
 @dynamic isReceiveCargo;
 @dynamic latitude;
-@dynamic longtitude;
+@dynamic longitude;
 @dynamic name;
-@dynamic map;
+@dynamic relationship;
 
 @end

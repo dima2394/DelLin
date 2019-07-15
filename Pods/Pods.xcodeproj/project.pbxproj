@@ -512,7 +512,7 @@
 		0502367DB20C8C1E22EBBD5FB40907D7 /* TyphoonAutoInjection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TyphoonAutoInjection.h; path = Source/Definition/AutoInjection/TyphoonAutoInjection.h; sourceTree = "<group>"; };
 		05B489438E76EAF453C332CE1401F290 /* TyphoonGlobalConfigCollector.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TyphoonGlobalConfigCollector.m; path = Source/Configuration/GlobalConfigResolver/TyphoonGlobalConfigCollector.m; sourceTree = "<group>"; };
 		0656DEBC8CAEAB2B6CA87C68B90D7C3C /* TyphoonNSNumberTypeConverter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TyphoonNSNumberTypeConverter.m; path = Source/TypeConversion/Converters/TyphoonNSNumberTypeConverter.m; sourceTree = "<group>"; };
-		069D7CF21F95B2A1115CCD52129DA2CA /* libRamblerTyphoonUtils.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libRamblerTyphoonUtils.a; path = libRamblerTyphoonUtils.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		069D7CF21F95B2A1115CCD52129DA2CA /* libRamblerTyphoonUtils.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRamblerTyphoonUtils.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		07441330667DB12160FF5B1EA1CE1200 /* OCMStubRecorder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMStubRecorder.m; path = Source/OCMock/OCMStubRecorder.m; sourceTree = "<group>"; };
 		083C4409D54FBEE3E6CA802CBF5D4D2C /* RamblerTyphoonUtils-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RamblerTyphoonUtils-prefix.pch"; sourceTree = "<group>"; };
 		08AF483CC9AA3343B3297752E13537C3 /* TyphoonStartup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TyphoonStartup.h; path = Source/Configuration/Startup/TyphoonStartup.h; sourceTree = "<group>"; };
@@ -539,7 +539,7 @@
 		14549A309FBD04A55C688F0DF6B85FF3 /* NSArray+FlattenArray.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+FlattenArray.h"; path = "Sources/EasyMapping/NSArray+FlattenArray.h"; sourceTree = "<group>"; };
 		14B913E2B4E95712A57DD8D79A2F3D4E /* TyphoonAbstractDetachableComponentFactoryPostProcessor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TyphoonAbstractDetachableComponentFactoryPostProcessor.m; path = Source/Configuration/TyphoonAbstractDetachableComponentFactoryPostProcessor.m; sourceTree = "<group>"; };
 		15E5C2EC0F238A888652C7E242063272 /* EKSerializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EKSerializer.h; path = Sources/EasyMapping/EKSerializer.h; sourceTree = "<group>"; };
-		164C9706570A425CE40C2690F2D7A99A /* libPods-DelLinTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-DelLinTests.a"; path = "libPods-DelLinTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		164C9706570A425CE40C2690F2D7A99A /* libPods-DelLinTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DelLinTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		16E4240DA46209458CC1A180F89BF21B /* OCMBoxedReturnValueProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMBoxedReturnValueProvider.h; path = Source/OCMock/OCMBoxedReturnValueProvider.h; sourceTree = "<group>"; };
 		16F038B0FD09F14E2B60E71EA96A2316 /* TyphoonInject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TyphoonInject.m; path = Source/Definition/Injections/TyphoonInject.m; sourceTree = "<group>"; };
 		187A37166C541B986220864C48784718 /* NSValue+OCMAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSValue+OCMAdditions.m"; path = "Source/OCMock/NSValue+OCMAdditions.m"; sourceTree = "<group>"; };
@@ -566,7 +566,7 @@
 		22E063917569B378657270E194C8D4D1 /* TyphoonInjectionByCollection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TyphoonInjectionByCollection.m; path = Source/Definition/Injections/TyphoonInjectionByCollection.m; sourceTree = "<group>"; };
 		2319188AD866F8F76CC8CB948F7F0734 /* UIView+NUIAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+NUIAdditions.m"; path = "Framer/Classes/UIView+NUIAdditions.m"; sourceTree = "<group>"; };
 		23F915EA1F691144448842A8F7F1A6FB /* AFURLSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLSessionManager.m; path = AFNetworking/AFURLSessionManager.m; sourceTree = "<group>"; };
-		244A4A7F2DFBBB0ED0B53CB940B65F03 /* libPods-DelLin.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-DelLin.a"; path = "libPods-DelLin.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		244A4A7F2DFBBB0ED0B53CB940B65F03 /* libPods-DelLin.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DelLin.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		251CB7EEE11D405015449DA95C19C860 /* TyphoonFactoryAutoInjectionPostProcessor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TyphoonFactoryAutoInjectionPostProcessor.h; path = Source/Definition/AutoInjection/TyphoonFactoryAutoInjectionPostProcessor.h; sourceTree = "<group>"; };
 		251EB7FD504DCF55EBB49126EE29E086 /* NSObject+DeallocNotification.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+DeallocNotification.m"; path = "Source/Utils/NSObject+DeallocNotification.m"; sourceTree = "<group>"; };
 		25BD39E799C210AEF383335A65BDB9C5 /* TyphoonComponentFactory+Storyboard.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "TyphoonComponentFactory+Storyboard.m"; path = "Source/ios/Storyboard/TyphoonComponentFactory+Storyboard.m"; sourceTree = "<group>"; };
@@ -578,7 +578,7 @@
 		2821B1634EFDFF448C54A5FAC4B8FA6C /* OCMConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMConstraint.h; path = Source/OCMock/OCMConstraint.h; sourceTree = "<group>"; };
 		285CC26F50759060AFA29EF520B8B79E /* TyphoonViewHelpers.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TyphoonViewHelpers.m; path = Source/ios/Storyboard/TyphoonViewHelpers.m; sourceTree = "<group>"; };
 		2943D20F11DA65639A738E566EB2FD21 /* TyphoonInject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TyphoonInject.h; path = Source/Definition/Injections/TyphoonInject.h; sourceTree = "<group>"; };
-		2A3717BD76538B4B9387043900BA65A0 /* libEasyMapping.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libEasyMapping.a; path = libEasyMapping.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A3717BD76538B4B9387043900BA65A0 /* libEasyMapping.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libEasyMapping.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C4A7F6578B7C3FFC931E0216E7F4357 /* RamblerTyphoonUtils-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RamblerTyphoonUtils-dummy.m"; sourceTree = "<group>"; };
 		2CE286AF1BFF1C9E57819A1940239879 /* TyphoonBlockDefinitionController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TyphoonBlockDefinitionController.m; path = Source/Definition/Internal/TyphoonBlockDefinitionController.m; sourceTree = "<group>"; };
 		2DB82E97A818ED38521BC4049FE91B26 /* TyphoonIntrospectionUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TyphoonIntrospectionUtils.h; path = Source/Utils/TyphoonIntrospectionUtils.h; sourceTree = "<group>"; };
@@ -704,7 +704,7 @@
 		736032AA512F16BCA10EB7DE7878E2F0 /* NSMethodSignature+OCMAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMethodSignature+OCMAdditions.m"; path = "Source/OCMock/NSMethodSignature+OCMAdditions.m"; sourceTree = "<group>"; };
 		7509A744E28024914D07CB8343FE524A /* OCMInvocationExpectation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMInvocationExpectation.h; path = Source/OCMock/OCMInvocationExpectation.h; sourceTree = "<group>"; };
 		752CFDA4B34917C35CB19BDBA287D185 /* TyphoonGlobalConfigCollector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TyphoonGlobalConfigCollector.h; path = Source/Configuration/GlobalConfigResolver/TyphoonGlobalConfigCollector.h; sourceTree = "<group>"; };
-		752EE195B989C9C2AFA0F3A561542C01 /* libOCMock.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libOCMock.a; path = libOCMock.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		752EE195B989C9C2AFA0F3A561542C01 /* libOCMock.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libOCMock.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7622D1F92B9D48A0A30EC40C8EAC7D4A /* TyphoonInjectionByFactoryReference.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TyphoonInjectionByFactoryReference.m; path = Source/Definition/Injections/TyphoonInjectionByFactoryReference.m; sourceTree = "<group>"; };
 		76262A3136D0A1EB8C341BA64627B564 /* OCMPassByRefSetter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMPassByRefSetter.h; path = Source/OCMock/OCMPassByRefSetter.h; sourceTree = "<group>"; };
 		76DF5B5AF31C6707A99965920F57A0D4 /* TyphoonTypeConverter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TyphoonTypeConverter.h; path = Source/TypeConversion/TyphoonTypeConverter.h; sourceTree = "<group>"; };
@@ -775,7 +775,7 @@
 		9B6329E3444148F57EA31FC6D4D18515 /* TyphoonPropertyStyleConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TyphoonPropertyStyleConfiguration.m; path = Source/Configuration/ConfigPostProcessor/TyphoonConfiguration/TyphoonPropertyStyleConfiguration.m; sourceTree = "<group>"; };
 		9C0E8ECDE7BE346792CE476B16FC4B9C /* OCMArg+Rambler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "OCMArg+Rambler.m"; path = "Code/Testing/AssemblyTesting/OCMArg+Rambler.m"; sourceTree = "<group>"; };
 		9C9F28908FEE48F5ED77BAFF5276EAD3 /* TyphoonIntrospectionUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TyphoonIntrospectionUtils.m; path = Source/Utils/TyphoonIntrospectionUtils.m; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9EA61170BC497808F4AB920817083520 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkActivityIndicatorManager.h; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.h"; sourceTree = "<group>"; };
 		9F59B91FC94C91327008BE39F03AC292 /* TyphoonInjectionByConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TyphoonInjectionByConfig.m; path = Source/Definition/Injections/TyphoonInjectionByConfig.m; sourceTree = "<group>"; };
 		9FACB314155B4B6EE0D513FE63624636 /* OCMMacroState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMMacroState.m; path = Source/OCMock/OCMMacroState.m; sourceTree = "<group>"; };
@@ -814,7 +814,7 @@
 		AF58721CCE6A1212CB03BF07855CBF79 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWebView+AFNetworking.m"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
 		AF729E323A7ABD8952F36D1A3FA03675 /* RamblerViperModuleFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RamblerViperModuleFactory.m; path = Source/RamblerViperModuleFactory.m; sourceTree = "<group>"; };
 		AFA25973719C9A8364AE94DE90C3CC8E /* TyphoonStackElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TyphoonStackElement.m; path = Source/Factory/Internal/TyphoonStackElement.m; sourceTree = "<group>"; };
-		B0305FFCA7C6B80413AF2696636845E1 /* libFramer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libFramer.a; path = libFramer.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0305FFCA7C6B80413AF2696636845E1 /* libFramer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFramer.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B140B46A661A128C46F6CBFA47299324 /* TyphoonDefinition+Config.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "TyphoonDefinition+Config.m"; path = "Source/Configuration/ConfigPostProcessor/TyphoonDefinition+Config.m"; sourceTree = "<group>"; };
 		B1622F92A11B591E3638A77AC4A6758E /* OCPartialMockObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCPartialMockObject.h; path = Source/OCMock/OCPartialMockObject.h; sourceTree = "<group>"; };
 		B1D57CBFDEF0E694401A33B1708EFC0A /* NSObject+DeallocNotification.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+DeallocNotification.h"; path = "Source/Utils/NSObject+DeallocNotification.h"; sourceTree = "<group>"; };
@@ -835,7 +835,7 @@
 		BBE601C8BC89DA4319AAF45807718912 /* RamblerInitialAssemblyCollector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RamblerInitialAssemblyCollector.h; path = Code/Production/AssemblyCollector/RamblerInitialAssemblyCollector.h; sourceTree = "<group>"; };
 		BC2C8DC1DA2B479E620AE23BA59BE371 /* Pods-DelLin-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DelLin-acknowledgements.markdown"; sourceTree = "<group>"; };
 		BC46EEF39F894A1B370495B7B1276D33 /* NSNotificationCenter+OCMAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSNotificationCenter+OCMAdditions.h"; path = "Source/OCMock/NSNotificationCenter+OCMAdditions.h"; sourceTree = "<group>"; };
-		BCE01A0F9794688A846B585BF59E79A2 /* libViperMcFlurry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libViperMcFlurry.a; path = libViperMcFlurry.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCE01A0F9794688A846B585BF59E79A2 /* libViperMcFlurry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libViperMcFlurry.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD66C96F63A99351034F619489999C40 /* TyphoonInjectedObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TyphoonInjectedObject.h; path = Source/Definition/AutoInjection/TyphoonInjectedObject.h; sourceTree = "<group>"; };
 		BD81E20210BFF46A6356F95BE6645B4E /* NUIHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NUIHandler.m; path = Framer/Classes/NUIHandler.m; sourceTree = "<group>"; };
 		BFB9472B72D866DD4D77F946463235CC /* Pods-DelLin-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DelLin-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -882,7 +882,7 @@
 		D10627D78BB4A0C59D6037A4DA5B8C10 /* TyphoonUIColorTypeConverter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TyphoonUIColorTypeConverter.m; path = Source/ios/TypeConversion/Converters/TyphoonUIColorTypeConverter.m; sourceTree = "<group>"; };
 		D11B87AC2009B989A0C5F5E39533F773 /* TyphoonInjectedObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TyphoonInjectedObject.m; path = Source/Definition/AutoInjection/TyphoonInjectedObject.m; sourceTree = "<group>"; };
 		D15D207EB922D8C74757AD3F0FA6CB30 /* TyphoonComponentFactory+InstanceBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "TyphoonComponentFactory+InstanceBuilder.h"; path = "Source/Factory/Internal/TyphoonComponentFactory+InstanceBuilder.h"; sourceTree = "<group>"; };
-		D26771182E397223D00AE6DDFC2EC20E /* libAFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libAFNetworking.a; path = libAFNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D26771182E397223D00AE6DDFC2EC20E /* libAFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAFNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2D11BFB0518FDF8A1C3B8E538DE426E /* NUIFramer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NUIFramer.m; path = Framer/Classes/NUIFramer.m; sourceTree = "<group>"; };
 		D49E05CF974987BDCA3EB4920F4AA8A6 /* EKPropertyHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EKPropertyHelper.h; path = Sources/EasyMapping/EKPropertyHelper.h; sourceTree = "<group>"; };
 		D5C3A29ACAA1842B6CCBF8BFB239CE98 /* OCMVerifier.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMVerifier.m; path = Source/OCMock/OCMVerifier.m; sourceTree = "<group>"; };
@@ -911,7 +911,7 @@
 		E258830AF7C0B2B85E4B95A596D12E0F /* TyphoonPatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TyphoonPatcher.m; path = Source/Test/Patcher/TyphoonPatcher.m; sourceTree = "<group>"; };
 		E28F7A1A9E9DC934E7B1EA423831FC99 /* AssemblyTesting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AssemblyTesting.h; path = Code/Testing/AssemblyTesting.h; sourceTree = "<group>"; };
 		E42CCEFAADB634F85AC986132374A74F /* NSInvocation+TCFWrapValues.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSInvocation+TCFWrapValues.m"; path = "Source/Factory/Internal/NSInvocation+TCFWrapValues.m"; sourceTree = "<group>"; };
-		E83B1B0C91556F73D49106849982A5D0 /* libTyphoon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libTyphoon.a; path = libTyphoon.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E83B1B0C91556F73D49106849982A5D0 /* libTyphoon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTyphoon.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E854B0046BB8FD2E147E4AA20996ACC7 /* UIView+TyphoonOutletTransfer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+TyphoonOutletTransfer.h"; path = "Source/ios/Storyboard/UIView+TyphoonOutletTransfer.h"; sourceTree = "<group>"; };
 		E8A4F8AFB78986DEE7161E528ACA9BBC /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AFNetworking.h"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
 		E91BB8F3959603A0E34825E62E7D88F2 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFSecurityPolicy.h; path = AFNetworking/AFSecurityPolicy.h; sourceTree = "<group>"; };
@@ -1077,7 +1077,6 @@
 				F491A3BC4FC6CBFDC5757E41BE821FB3 /* ViperMcFlurry.h */,
 				90DB2080F155DB74D81B01F6348D5EF5 /* Support Files */,
 			);
-			name = ViperMcFlurry;
 			path = ViperMcFlurry;
 			sourceTree = "<group>";
 		};
@@ -1092,7 +1091,6 @@
 				749FAD17DBB6B256CC18860E7954A8B3 /* Support Files */,
 				1083B44B63E39FD9E0247983814C1976 /* UIKit */,
 			);
-			name = AFNetworking;
 			path = AFNetworking;
 			sourceTree = "<group>";
 		};
@@ -1377,7 +1375,6 @@
 				D20D1646725F08C5D505DA60459D63F4 /* no-arc */,
 				A9AC2D7C68C58D82E6E2A05DDC620562 /* Support Files */,
 			);
-			name = Typhoon;
 			path = Typhoon;
 			sourceTree = "<group>";
 		};
@@ -1398,7 +1395,6 @@
 				1DE276DF9326C8F5F17C195FDA7E91FB /* UIView+NUIInstaller.m */,
 				D260471D1B03B02DDE918016AE473F45 /* Support Files */,
 			);
-			name = Framer;
 			path = Framer;
 			sourceTree = "<group>";
 		};
@@ -1417,7 +1413,6 @@
 				D0CCA517B63D3FE7E32226BC04BF03F1 /* Core */,
 				090FD6A925E677CB24BC27CCAC6BC295 /* Support Files */,
 			);
-			name = EasyMapping;
 			path = EasyMapping;
 			sourceTree = "<group>";
 		};
@@ -1432,7 +1427,6 @@
 				7EB1F0EA780C0C1A2366B3C803C2D676 /* AssemblyTesting */,
 				AADD8114C1186D0C6085A5271C483D96 /* Support Files */,
 			);
-			name = RamblerTyphoonUtils;
 			path = RamblerTyphoonUtils;
 			sourceTree = "<group>";
 		};
@@ -1736,7 +1730,6 @@
 				418106565571DA90A437126ACD8D57D3 /* OCProtocolMockObject.m */,
 				02DDFA60490109FD0FECB477F7CD4837 /* Support Files */,
 			);
-			name = OCMock;
 			path = OCMock;
 			sourceTree = "<group>";
 		};
@@ -2240,6 +2233,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
@@ -2616,6 +2610,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -3066,6 +3061,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};

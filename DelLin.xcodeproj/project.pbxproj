@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0CE5D942A0C3A4D2E4CBCFF8 /* libPods-DelLinTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 39BAA2DBAAA34184D13CC2AB /* libPods-DelLinTests.a */; };
-		2A1B042F622D87793A5B05E4 /* libPods-DelLin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F90EEB5EF14A8FD3F1B0A874 /* libPods-DelLin.a */; };
 		356445732D1B6C1E556364D1 /* FormOrderAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 5642838D9F6DD4E3BF038610 /* FormOrderAssembly.m */; };
 		60270D7FB6BAC18FC16C4084 /* FormOrderPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9774BC20C6B9AD8C2E5A6A /* FormOrderPresenter.m */; };
 		6D20D4DA22BD28EE00051D4F /* DelLinTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D20D4D922BD28EE00051D4F /* DelLinTests.m */; };
@@ -17,7 +15,10 @@
 		73B3C86AD17FC189722B8281 /* FormOrderRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 03AC6B6A848771A808D84642 /* FormOrderRouter.m */; };
 		760EF78822CFE2F200548A87 /* DVRoutesAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 760EF78622CFE2F200548A87 /* DVRoutesAssembly.m */; };
 		760EF78922CFE2F200548A87 /* DVTerminalsRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 760EF78722CFE2F200548A87 /* DVTerminalsRoute.m */; };
-		76191D4822D7D8C800783E00 /* DelLin.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7658368022BCCA25005E8D25 /* DelLin.xcdatamodeld */; };
+		76191D5222D7E2C000783E00 /* DVCity.m in Sources */ = {isa = PBXBuildFile; fileRef = 7644DFF322D0C76C00FBD451 /* DVCity.m */; };
+		76191D5322D7E2C300783E00 /* DVTerminal.m in Sources */ = {isa = PBXBuildFile; fileRef = 768B5D3422CDF4C700A41198 /* DVTerminal.m */; };
+		76191D5422D7E2C600783E00 /* DVMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 768B5D3722CDFDA000A41198 /* DVMap.m */; };
+		762E33DA22DC69A100D833AA /* DVCoreData+DI.m in Sources */ = {isa = PBXBuildFile; fileRef = 762E33D922DC69A100D833AA /* DVCoreData+DI.m */; };
 		7644DFF422D0C76C00FBD451 /* DVCity.m in Sources */ = {isa = PBXBuildFile; fileRef = 7644DFF322D0C76C00FBD451 /* DVCity.m */; };
 		7644DFF722D0D97B00FBD451 /* UIView+Sugar.m in Sources */ = {isa = PBXBuildFile; fileRef = 7644DFF622D0D97B00FBD451 /* UIView+Sugar.m */; };
 		7644DFFB22D26CF900FBD451 /* StorageServiceImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7644DFFA22D26CF900FBD451 /* StorageServiceImplementation.m */; };
@@ -29,14 +30,21 @@
 		768B5D3522CDF4C700A41198 /* DVTerminal.m in Sources */ = {isa = PBXBuildFile; fileRef = 768B5D3422CDF4C700A41198 /* DVTerminal.m */; };
 		768B5D3822CDFDA000A41198 /* DVMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 768B5D3722CDFDA000A41198 /* DVMap.m */; };
 		76A0554E22BCD6D90005C621 /* DVTerminalsEndpoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A0554D22BCD6D90005C621 /* DVTerminalsEndpoint.m */; };
+		76EB1C2322DC5D870041B1AD /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 76EB1C2122DC5D870041B1AD /* Model.xcdatamodeld */; };
+		76EB1C2C22DC625A0041B1AD /* Map+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 76EB1C2622DC625A0041B1AD /* Map+CoreDataClass.m */; };
+		76EB1C2D22DC625A0041B1AD /* Map+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 76EB1C2722DC625A0041B1AD /* Map+CoreDataProperties.m */; };
+		76EB1C2E22DC625A0041B1AD /* Terminal+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 76EB1C2A22DC625A0041B1AD /* Terminal+CoreDataClass.m */; };
+		76EB1C2F22DC625A0041B1AD /* Terminal+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 76EB1C2B22DC625A0041B1AD /* Terminal+CoreDataProperties.m */; };
 		76F2824822BCDCC400A0D635 /* AFHTTPSessionManager+Endpoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 76F2824722BCDCC400A0D635 /* AFHTTPSessionManager+Endpoint.m */; };
 		76F2824D22BCE7CE00A0D635 /* DVServicesAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 76F2824C22BCE7CE00A0D635 /* DVServicesAssembly.m */; };
 		79A299774C7AE1BBE68E51F3 /* FormOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AEFD1CB371B7533B3A77E27 /* FormOrderViewController.m */; };
 		8092E591E89B9745B862C71E /* TerminalsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8023E730C3E2E6D3612F2E0E /* TerminalsViewController.m */; };
+		A0B7D312413F2EABEDACE0DC /* libPods-DelLinTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A676CFD14AB1915C5F09414 /* libPods-DelLinTests.a */; };
 		A40FCDBF5F133EC9F95513B1 /* TerminalsRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 81970485CCA1D94CDCE9CF90 /* TerminalsRouter.m */; };
 		BCC5E58CCFE3D6C64C56D221 /* NetworkServiceImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D127443781F3576747F0E54 /* NetworkServiceImplementation.m */; };
 		BDF6ECAF9BEE957E0C726451 /* TerminalsAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = A35ED4435FA3994878843B8D /* TerminalsAssembly.m */; };
 		E5F852174530E4F0006944A1 /* TerminalsPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = D9205F80B88D3AA46CDCD387 /* TerminalsPresenter.m */; };
+		E7884D3096753165CEE254CF /* libPods-DelLin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5125819CC59FE2856760545A /* libPods-DelLin.a */; };
 		FBB828B5B2E8E824A72C567F /* FormOrderInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F10409A34656D0E134E377A /* FormOrderInteractor.m */; };
 /* End PBXBuildFile section */
 
@@ -51,19 +59,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0214387159291D2D73822B98 /* Pods-DelLin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DelLin.debug.xcconfig"; path = "Target Support Files/Pods-DelLin/Pods-DelLin.debug.xcconfig"; sourceTree = "<group>"; };
 		026545E2509D676D869ED1F9 /* FormOrderInteractorInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FormOrderInteractorInput.h; sourceTree = "<group>"; };
 		03AC6B6A848771A808D84642 /* FormOrderRouter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FormOrderRouter.m; sourceTree = "<group>"; };
+		0A676CFD14AB1915C5F09414 /* libPods-DelLinTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DelLinTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2299155E29E1588071DC2FAF /* NetworkServiceImplementation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NetworkServiceImplementation.h; sourceTree = "<group>"; };
 		280ED236B1F8F4C8401996A8 /* FormOrderModuleInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FormOrderModuleInput.h; sourceTree = "<group>"; };
+		2859517F364164227A283164 /* Pods-DelLinTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DelLinTests.release.xcconfig"; path = "Target Support Files/Pods-DelLinTests/Pods-DelLinTests.release.xcconfig"; sourceTree = "<group>"; };
 		28E9E6996A07C2F3E002B5FF /* FormOrderInteractor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FormOrderInteractor.h; sourceTree = "<group>"; };
 		2F10409A34656D0E134E377A /* FormOrderInteractor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FormOrderInteractor.m; sourceTree = "<group>"; };
-		34684C80A891BA6B7BCF927A /* Pods-DelLin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DelLin.debug.xcconfig"; path = "Target Support Files/Pods-DelLin/Pods-DelLin.debug.xcconfig"; sourceTree = "<group>"; };
 		36E108EFAEB21BF682FFB948 /* TerminalsPresenter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TerminalsPresenter.h; sourceTree = "<group>"; };
 		38B0522A95054E74F665B9D7 /* TerminalsModuleInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TerminalsModuleInput.h; sourceTree = "<group>"; };
-		39BAA2DBAAA34184D13CC2AB /* libPods-DelLinTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DelLinTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C9774BC20C6B9AD8C2E5A6A /* FormOrderPresenter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FormOrderPresenter.m; sourceTree = "<group>"; };
 		40CDF87BD548E75796265775 /* FormOrderViewInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FormOrderViewInput.h; sourceTree = "<group>"; };
 		4DB4936EE04CD6836EFA8DA5 /* TerminalsViewOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TerminalsViewOutput.h; sourceTree = "<group>"; };
+		5125819CC59FE2856760545A /* libPods-DelLin.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DelLin.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		53FC994465671ADD130C24A9 /* TerminalsInteractor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TerminalsInteractor.h; sourceTree = "<group>"; };
 		5642838D9F6DD4E3BF038610 /* FormOrderAssembly.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FormOrderAssembly.m; sourceTree = "<group>"; };
 		5D127443781F3576747F0E54 /* NetworkServiceImplementation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = NetworkServiceImplementation.m; sourceTree = "<group>"; };
@@ -81,7 +91,8 @@
 		760EF78522CFE2F200548A87 /* RouteProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RouteProtocol.h; sourceTree = "<group>"; };
 		760EF78622CFE2F200548A87 /* DVRoutesAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVRoutesAssembly.m; sourceTree = "<group>"; };
 		760EF78722CFE2F200548A87 /* DVTerminalsRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVTerminalsRoute.m; sourceTree = "<group>"; };
-		76191D4922D7DF0200783E00 /* DelLin.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DelLin.xcdatamodel; sourceTree = "<group>"; };
+		762E33D822DC69A100D833AA /* DVCoreData+DI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DVCoreData+DI.h"; sourceTree = "<group>"; };
+		762E33D922DC69A100D833AA /* DVCoreData+DI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DVCoreData+DI.m"; sourceTree = "<group>"; };
 		7644DFF222D0C76C00FBD451 /* DVCity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DVCity.h; sourceTree = "<group>"; };
 		7644DFF322D0C76C00FBD451 /* DVCity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DVCity.m; sourceTree = "<group>"; };
 		7644DFF522D0D97B00FBD451 /* UIView+Sugar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Sugar.h"; sourceTree = "<group>"; };
@@ -94,7 +105,6 @@
 		7658367422BCCA25005E8D25 /* DelLin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DelLin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7658367722BCCA25005E8D25 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7658367822BCCA25005E8D25 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		7658368122BCCA25005E8D25 /* DelLinTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DelLinTest.xcdatamodel; sourceTree = "<group>"; };
 		7658368322BCCA29005E8D25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7658368622BCCA29005E8D25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7658368822BCCA29005E8D25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -106,14 +116,15 @@
 		76A0554822BCD43F0005C621 /* DVEndpointProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DVEndpointProtocol.h; sourceTree = "<group>"; };
 		76A0554C22BCD6D90005C621 /* DVTerminalsEndpoint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DVTerminalsEndpoint.h; sourceTree = "<group>"; };
 		76A0554D22BCD6D90005C621 /* DVTerminalsEndpoint.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DVTerminalsEndpoint.m; sourceTree = "<group>"; };
-		76E521F622CE17690078C988 /* Terminal+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Terminal+CoreDataProperties.h"; sourceTree = "<group>"; };
-		76E521F722CE17690078C988 /* Terminal+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Terminal+CoreDataClass.h"; sourceTree = "<group>"; };
-		76E521F822CE17690078C988 /* Terminal+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Terminal+CoreDataClass.m"; sourceTree = "<group>"; };
-		76E521F922CE17690078C988 /* Terminal+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Terminal+CoreDataProperties.m"; sourceTree = "<group>"; };
-		76E521FA22CE17690078C988 /* Map+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Map+CoreDataProperties.h"; sourceTree = "<group>"; };
-		76E521FB22CE17690078C988 /* Map+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Map+CoreDataClass.h"; sourceTree = "<group>"; };
-		76E521FC22CE17690078C988 /* Map+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Map+CoreDataClass.m"; sourceTree = "<group>"; };
-		76E521FD22CE17690078C988 /* Map+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Map+CoreDataProperties.m"; sourceTree = "<group>"; };
+		76EB1C2222DC5D870041B1AD /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		76EB1C2422DC625A0041B1AD /* Map+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Map+CoreDataProperties.h"; sourceTree = "<group>"; };
+		76EB1C2522DC625A0041B1AD /* Map+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Map+CoreDataClass.h"; sourceTree = "<group>"; };
+		76EB1C2622DC625A0041B1AD /* Map+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Map+CoreDataClass.m"; sourceTree = "<group>"; };
+		76EB1C2722DC625A0041B1AD /* Map+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Map+CoreDataProperties.m"; sourceTree = "<group>"; };
+		76EB1C2822DC625A0041B1AD /* Terminal+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Terminal+CoreDataProperties.h"; sourceTree = "<group>"; };
+		76EB1C2922DC625A0041B1AD /* Terminal+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Terminal+CoreDataClass.h"; sourceTree = "<group>"; };
+		76EB1C2A22DC625A0041B1AD /* Terminal+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Terminal+CoreDataClass.m"; sourceTree = "<group>"; };
+		76EB1C2B22DC625A0041B1AD /* Terminal+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Terminal+CoreDataProperties.m"; sourceTree = "<group>"; };
 		76F2824622BCDCC400A0D635 /* AFHTTPSessionManager+Endpoint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AFHTTPSessionManager+Endpoint.h"; sourceTree = "<group>"; };
 		76F2824722BCDCC400A0D635 /* AFHTTPSessionManager+Endpoint.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AFHTTPSessionManager+Endpoint.m"; sourceTree = "<group>"; };
 		76F2824B22BCE7CE00A0D635 /* DVServicesAssembly.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DVServicesAssembly.h; sourceTree = "<group>"; };
@@ -123,22 +134,20 @@
 		8023E730C3E2E6D3612F2E0E /* TerminalsViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TerminalsViewController.m; sourceTree = "<group>"; };
 		81970485CCA1D94CDCE9CF90 /* TerminalsRouter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TerminalsRouter.m; sourceTree = "<group>"; };
 		8270E6B641913B0D7D85CC4E /* TerminalsAssembly.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TerminalsAssembly.h; sourceTree = "<group>"; };
-		85C4AF60742C3D3CD120048F /* Pods-DelLin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DelLin.release.xcconfig"; path = "Target Support Files/Pods-DelLin/Pods-DelLin.release.xcconfig"; sourceTree = "<group>"; };
 		89F07D4C0EE6C1B25638ADBA /* TerminalsViewInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TerminalsViewInput.h; sourceTree = "<group>"; };
+		8A81A67EFA877EE53E49EF54 /* Pods-DelLin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DelLin.release.xcconfig"; path = "Target Support Files/Pods-DelLin/Pods-DelLin.release.xcconfig"; sourceTree = "<group>"; };
 		9AEFD1CB371B7533B3A77E27 /* FormOrderViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FormOrderViewController.m; sourceTree = "<group>"; };
 		9F4ED0FC1359F2CD22A63569 /* TerminalsInteractorOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TerminalsInteractorOutput.h; sourceTree = "<group>"; };
 		A35ED4435FA3994878843B8D /* TerminalsAssembly.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TerminalsAssembly.m; sourceTree = "<group>"; };
-		B961CE98A0BAA2F2155BD14A /* Pods-DelLinTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DelLinTests.release.xcconfig"; path = "Target Support Files/Pods-DelLinTests/Pods-DelLinTests.release.xcconfig"; sourceTree = "<group>"; };
 		BEF1C6D4A745EAB60D8B16D6 /* FormOrderRouter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FormOrderRouter.h; sourceTree = "<group>"; };
 		C3E9F587B7E86774501945A7 /* TerminalsViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TerminalsViewController.h; sourceTree = "<group>"; };
 		D1EABF1E7886F860F5D1CC2F /* FormOrderViewOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FormOrderViewOutput.h; sourceTree = "<group>"; };
+		D4379B8A1846BCCF7B55391A /* Pods-DelLinTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DelLinTests.debug.xcconfig"; path = "Target Support Files/Pods-DelLinTests/Pods-DelLinTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D9205F80B88D3AA46CDCD387 /* TerminalsPresenter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TerminalsPresenter.m; sourceTree = "<group>"; };
-		DE726D3706244EF6C01B3FEB /* Pods-DelLinTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DelLinTests.debug.xcconfig"; path = "Target Support Files/Pods-DelLinTests/Pods-DelLinTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E25E0B7C58012AF0309053FF /* FormOrderAssembly.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FormOrderAssembly.h; sourceTree = "<group>"; };
 		EA0916B50D098AFB922266A5 /* FormOrderInteractorOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FormOrderInteractorOutput.h; sourceTree = "<group>"; };
 		F3D40DF1E5BBF29219C9E836 /* FormOrderRouterInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FormOrderRouterInput.h; sourceTree = "<group>"; };
 		F5B153E66AF5A8FC707D2AE7 /* TerminalsRouterInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TerminalsRouterInput.h; sourceTree = "<group>"; };
-		F90EEB5EF14A8FD3F1B0A874 /* libPods-DelLin.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DelLin.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,7 +155,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0CE5D942A0C3A4D2E4CBCFF8 /* libPods-DelLinTests.a in Frameworks */,
+				A0B7D312413F2EABEDACE0DC /* libPods-DelLinTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,7 +163,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A1B042F622D87793A5B05E4 /* libPods-DelLin.a in Frameworks */,
+				E7884D3096753165CEE254CF /* libPods-DelLin.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,11 +201,11 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
-		2458EF85AC70B704C60E58D4 /* Frameworks */ = {
+		2739EA86FE411F0D1966AC02 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F90EEB5EF14A8FD3F1B0A874 /* libPods-DelLin.a */,
-				39BAA2DBAAA34184D13CC2AB /* libPods-DelLinTests.a */,
+				5125819CC59FE2856760545A /* libPods-DelLin.a */,
+				0A676CFD14AB1915C5F09414 /* libPods-DelLinTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -215,10 +224,10 @@
 		49EBEDA5BC50AE1D8E722D42 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				34684C80A891BA6B7BCF927A /* Pods-DelLin.debug.xcconfig */,
-				85C4AF60742C3D3CD120048F /* Pods-DelLin.release.xcconfig */,
-				DE726D3706244EF6C01B3FEB /* Pods-DelLinTests.debug.xcconfig */,
-				B961CE98A0BAA2F2155BD14A /* Pods-DelLinTests.release.xcconfig */,
+				0214387159291D2D73822B98 /* Pods-DelLin.debug.xcconfig */,
+				8A81A67EFA877EE53E49EF54 /* Pods-DelLin.release.xcconfig */,
+				D4379B8A1846BCCF7B55391A /* Pods-DelLinTests.debug.xcconfig */,
+				2859517F364164227A283164 /* Pods-DelLinTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -335,6 +344,8 @@
 			children = (
 				7644E00322D397A900FBD451 /* DVCoreComponentsAssembly.h */,
 				7644E00422D397A900FBD451 /* DVCoreComponentsAssembly.m */,
+				762E33D822DC69A100D833AA /* DVCoreData+DI.h */,
+				762E33D922DC69A100D833AA /* DVCoreData+DI.m */,
 			);
 			path = CoreComponents;
 			sourceTree = "<group>";
@@ -346,7 +357,7 @@
 				6D20D4D822BD28EE00051D4F /* DelLinTests */,
 				7658367522BCCA25005E8D25 /* Products */,
 				49EBEDA5BC50AE1D8E722D42 /* Pods */,
-				2458EF85AC70B704C60E58D4 /* Frameworks */,
+				2739EA86FE411F0D1966AC02 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -362,6 +373,7 @@
 		7658367622BCCA25005E8D25 /* DelLin */ = {
 			isa = PBXGroup;
 			children = (
+				76EB1C2122DC5D870041B1AD /* Model.xcdatamodeld */,
 				760EF78B22CFEDAF00548A87 /* Core */,
 				76F2824A22BCE77C00A0D635 /* BusinessLogic */,
 				0D001CBDDA2AC6352C605961 /* Presentation */,
@@ -371,7 +383,6 @@
 				7658368522BCCA29005E8D25 /* LaunchScreen.storyboard */,
 				7658368822BCCA29005E8D25 /* Info.plist */,
 				7658368922BCCA29005E8D25 /* main.m */,
-				7658368022BCCA25005E8D25 /* DelLin.xcdatamodeld */,
 			);
 			path = DelLin;
 			sourceTree = "<group>";
@@ -379,14 +390,14 @@
 		768B5D3222CDF4AD00A41198 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				76E521F722CE17690078C988 /* Terminal+CoreDataClass.h */,
-				76E521F822CE17690078C988 /* Terminal+CoreDataClass.m */,
-				76E521F622CE17690078C988 /* Terminal+CoreDataProperties.h */,
-				76E521F922CE17690078C988 /* Terminal+CoreDataProperties.m */,
-				76E521FA22CE17690078C988 /* Map+CoreDataProperties.h */,
-				76E521FD22CE17690078C988 /* Map+CoreDataProperties.m */,
-				76E521FB22CE17690078C988 /* Map+CoreDataClass.h */,
-				76E521FC22CE17690078C988 /* Map+CoreDataClass.m */,
+				76EB1C2422DC625A0041B1AD /* Map+CoreDataProperties.h */,
+				76EB1C2522DC625A0041B1AD /* Map+CoreDataClass.h */,
+				76EB1C2622DC625A0041B1AD /* Map+CoreDataClass.m */,
+				76EB1C2722DC625A0041B1AD /* Map+CoreDataProperties.m */,
+				76EB1C2822DC625A0041B1AD /* Terminal+CoreDataProperties.h */,
+				76EB1C2922DC625A0041B1AD /* Terminal+CoreDataClass.h */,
+				76EB1C2A22DC625A0041B1AD /* Terminal+CoreDataClass.m */,
+				76EB1C2B22DC625A0041B1AD /* Terminal+CoreDataProperties.m */,
 				7644DFF222D0C76C00FBD451 /* DVCity.h */,
 				7644DFF322D0C76C00FBD451 /* DVCity.m */,
 				768B5D3322CDF4C700A41198 /* DVTerminal.h */,
@@ -517,7 +528,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6D20D4DE22BD28EE00051D4F /* Build configuration list for PBXNativeTarget "DelLinTests" */;
 			buildPhases = (
-				90540762E38E015626127182 /* [CP] Check Pods Manifest.lock */,
+				2D6F1AD2464A5D8FEDBDA40B /* [CP] Check Pods Manifest.lock */,
 				6D20D4D322BD28EE00051D4F /* Sources */,
 				6D20D4D422BD28EE00051D4F /* Frameworks */,
 				6D20D4D522BD28EE00051D4F /* Resources */,
@@ -536,7 +547,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7658368D22BCCA29005E8D25 /* Build configuration list for PBXNativeTarget "DelLin" */;
 			buildPhases = (
-				ABAE0B21B8747CE916936593 /* [CP] Check Pods Manifest.lock */,
+				25DE79BCB2D1F92F68D5361F /* [CP] Check Pods Manifest.lock */,
 				7658367022BCCA25005E8D25 /* Sources */,
 				7658367122BCCA25005E8D25 /* Frameworks */,
 				7658367222BCCA25005E8D25 /* Resources */,
@@ -608,29 +619,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		90540762E38E015626127182 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-DelLinTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		ABAE0B21B8747CE916936593 /* [CP] Check Pods Manifest.lock */ = {
+		25DE79BCB2D1F92F68D5361F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -652,6 +641,28 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		2D6F1AD2464A5D8FEDBDA40B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DelLinTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -659,6 +670,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76191D5322D7E2C300783E00 /* DVTerminal.m in Sources */,
+				76191D5222D7E2C000783E00 /* DVCity.m in Sources */,
+				76191D5422D7E2C600783E00 /* DVMap.m in Sources */,
 				6D20D4DA22BD28EE00051D4F /* DelLinTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -668,21 +682,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				76A0554E22BCD6D90005C621 /* DVTerminalsEndpoint.m in Sources */,
-				76191D4822D7D8C800783E00 /* DelLin.xcdatamodeld in Sources */,
 				7658367922BCCA25005E8D25 /* AppDelegate.m in Sources */,
 				7658368A22BCCA29005E8D25 /* main.m in Sources */,
 				76F2824D22BCE7CE00A0D635 /* DVServicesAssembly.m in Sources */,
 				356445732D1B6C1E556364D1 /* FormOrderAssembly.m in Sources */,
+				762E33DA22DC69A100D833AA /* DVCoreData+DI.m in Sources */,
 				760EF78822CFE2F200548A87 /* DVRoutesAssembly.m in Sources */,
 				76F2824822BCDCC400A0D635 /* AFHTTPSessionManager+Endpoint.m in Sources */,
 				768B5D3522CDF4C700A41198 /* DVTerminal.m in Sources */,
 				7644DFF722D0D97B00FBD451 /* UIView+Sugar.m in Sources */,
+				76EB1C2E22DC625A0041B1AD /* Terminal+CoreDataClass.m in Sources */,
 				79A299774C7AE1BBE68E51F3 /* FormOrderViewController.m in Sources */,
 				7644DFFB22D26CF900FBD451 /* StorageServiceImplementation.m in Sources */,
+				76EB1C2322DC5D870041B1AD /* Model.xcdatamodeld in Sources */,
+				76EB1C2F22DC625A0041B1AD /* Terminal+CoreDataProperties.m in Sources */,
 				768B5D3822CDFDA000A41198 /* DVMap.m in Sources */,
 				7644DFF422D0C76C00FBD451 /* DVCity.m in Sources */,
 				60270D7FB6BAC18FC16C4084 /* FormOrderPresenter.m in Sources */,
 				6DEC176222BD1F2C0065AEE9 /* DVApplicationAssembly.m in Sources */,
+				76EB1C2D22DC625A0041B1AD /* Map+CoreDataProperties.m in Sources */,
 				7644E00522D397A900FBD451 /* DVCoreComponentsAssembly.m in Sources */,
 				FBB828B5B2E8E824A72C567F /* FormOrderInteractor.m in Sources */,
 				73B3C86AD17FC189722B8281 /* FormOrderRouter.m in Sources */,
@@ -693,6 +711,7 @@
 				E5F852174530E4F0006944A1 /* TerminalsPresenter.m in Sources */,
 				72140935551EE985FE0DD860 /* TerminalsInteractor.m in Sources */,
 				A40FCDBF5F133EC9F95513B1 /* TerminalsRouter.m in Sources */,
+				76EB1C2C22DC625A0041B1AD /* Map+CoreDataClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -720,10 +739,11 @@
 /* Begin XCBuildConfiguration section */
 		6D20D4DF22BD28EE00051D4F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DE726D3706244EF6C01B3FEB /* Pods-DelLinTests.debug.xcconfig */;
+			baseConfigurationReference = D4379B8A1846BCCF7B55391A /* Pods-DelLinTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C22RZK2BW2;
 				INFOPLIST_FILE = DelLinTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -746,10 +766,11 @@
 		};
 		6D20D4E022BD28EE00051D4F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B961CE98A0BAA2F2155BD14A /* Pods-DelLinTests.release.xcconfig */;
+			baseConfigurationReference = 2859517F364164227A283164 /* Pods-DelLinTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C22RZK2BW2;
 				INFOPLIST_FILE = DelLinTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -884,7 +905,7 @@
 		};
 		7658368E22BCCA29005E8D25 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 34684C80A891BA6B7BCF927A /* Pods-DelLin.debug.xcconfig */;
+			baseConfigurationReference = 0214387159291D2D73822B98 /* Pods-DelLin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -922,7 +943,7 @@
 		};
 		7658368F22BCCA29005E8D25 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 85C4AF60742C3D3CD120048F /* Pods-DelLin.release.xcconfig */;
+			baseConfigurationReference = 8A81A67EFA877EE53E49EF54 /* Pods-DelLin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -991,14 +1012,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		7658368022BCCA25005E8D25 /* DelLin.xcdatamodeld */ = {
+		76EB1C2122DC5D870041B1AD /* Model.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				76191D4922D7DF0200783E00 /* DelLin.xcdatamodel */,
-				7658368122BCCA25005E8D25 /* DelLinTest.xcdatamodel */,
+				76EB1C2222DC5D870041B1AD /* Model.xcdatamodel */,
 			);
-			currentVersion = 7658368122BCCA25005E8D25 /* DelLinTest.xcdatamodel */;
-			path = DelLin.xcdatamodeld;
+			currentVersion = 76EB1C2222DC5D870041B1AD /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

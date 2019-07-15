@@ -46,4 +46,12 @@
     NSLog(@"");
 }
 
+- (void)fromOrderInteractorDidFinishFetchingTerminals {
+
+}
+
+- (void)fromOrderInteractorDidFinishFetchingTerminalsWithError:(NSError *)error {
+    
+}
+
 @end

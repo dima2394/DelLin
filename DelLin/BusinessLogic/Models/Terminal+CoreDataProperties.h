@@ -2,7 +2,7 @@
 //  Terminal+CoreDataProperties.h
 //  DelLin
 //
-//  Created by Dmitriy Verennik on 04/07/2019.
+//  Created by Dmitriy Verennik on 15/07/2019.
 //  Copyright © 2019 Dmitriy Verennik. All rights reserved.
 //
 //
@@ -16,15 +16,15 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (NSFetchRequest<Terminal *> *)fetchRequest;
 
-@property (nullable, nonatomic, copy) NSString *address;
 @property (nonatomic) int32_t id;
+@property (nullable, nonatomic, copy) NSString *address;
 @property (nonatomic) BOOL isDefault;
 @property (nonatomic) BOOL isGiveoutCargo;
 @property (nonatomic) BOOL isReceiveCargo;
 @property (nonatomic) float latitude;
-@property (nonatomic) float longtitude;
+@property (nonatomic) float longitude;
 @property (nullable, nonatomic, copy) NSString *name;
-@property (nullable, nonatomic, retain) Map *map;
+@property (nullable, nonatomic, retain) Map *relationship;
 
 @end
 

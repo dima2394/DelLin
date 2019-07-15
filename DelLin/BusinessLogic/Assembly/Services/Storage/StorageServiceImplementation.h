@@ -14,6 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface StorageServiceImplementation : NSObject <StorageService>
 
 @property (nonatomic, strong) NSManagedObjectContext *managedObjectContext;
+@property (nonatomic, strong) NSURL *storeURL;
+@property (nonatomic, strong) NSURL *modelURL;
 
 @end
 

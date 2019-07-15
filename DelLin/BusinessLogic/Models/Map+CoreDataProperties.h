@@ -2,7 +2,7 @@
 //  Map+CoreDataProperties.h
 //  DelLin
 //
-//  Created by Dmitriy Verennik on 04/07/2019.
+//  Created by Dmitriy Verennik on 15/07/2019.
 //  Copyright © 2019 Dmitriy Verennik. All rights reserved.
 //
 //
@@ -16,10 +16,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (NSFetchRequest<Map *> *)fetchRequest;
 
-@property (nonatomic) float height;
 @property (nonatomic) int32_t id;
+@property (nonatomic) float height;
 @property (nullable, nonatomic, copy) NSURL *mapThumbnailURL;
 @property (nonatomic) float width;
+@property (nullable, nonatomic, retain) Terminal *relationship;
 
 @end
 

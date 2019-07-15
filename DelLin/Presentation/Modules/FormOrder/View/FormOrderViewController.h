@@ -18,8 +18,8 @@
 @property (nonatomic, strong) id<FormOrderViewOutput> output;
 
 @property (nonatomic, strong) UIView *textFieldContainerView;
-@property (nonatomic, strong) UITextField *fromTextField;
-@property (nonatomic, strong) UITextField *toTextField;
+@property (nonatomic, strong) UITextField *departureTextField;
+@property (nonatomic, strong) UITextField *destinationTextField;
 @property (nonatomic, strong) UIButton *saveButton;
 
 @end

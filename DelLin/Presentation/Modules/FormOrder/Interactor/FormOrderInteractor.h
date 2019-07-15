@@ -18,5 +18,4 @@
 @property (nonatomic, strong) id<NetworkService> networkService;
 @property (nonatomic, strong) id<StorageService> storageService;
 
-
 @end

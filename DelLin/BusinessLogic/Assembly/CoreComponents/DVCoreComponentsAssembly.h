@@ -8,6 +8,7 @@
 
 #import "TyphoonAssembly.h"
 #import <RamblerTyphoonUtils/AssemblyCollector.h>
+#import "DVCoreData+DI.h"
 @import CoreData;
 
 NS_ASSUME_NONNULL_BEGIN
@@ -15,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface DVCoreComponentsAssembly : TyphoonAssembly <RamblerInitialAssembly>
 
 - (NSPersistentStoreCoordinator *)persistentStoreCoordinator;
-//- (NSManagedObjectContext *)mainManagedObjectContext;
+- (NSManagedObjectContext *)mainManagedObjectContext;
 - (NSManagedObjectContext *)managedObjectContext;
 - (NSArray *)applicationDocumentsDirectories;
 - (NSManagedObjectModel *)managedObjectModel;

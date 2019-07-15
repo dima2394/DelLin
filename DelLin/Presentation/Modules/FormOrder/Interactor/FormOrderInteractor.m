@@ -19,25 +19,26 @@
 
 - (void)fetchTerminals {
     __weak FormOrderInteractor *weakSelf = self;
-    AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
-    NSManagedObjectContext *context = appDelegate.persistentContainer.viewContext;
 
     [_networkService fetchTerminalsWithCompletion:^(NSArray<DVCity *> * _Nullable cities, NSError * _Nullable error) {
         __strong FormOrderInteractor *strongSelf = weakSelf;
-        if (error == nil) {
-            NSOperationQueue *queue = [[NSOperationQueue alloc] init];
-            NSOperation *operation = [NSBlockOperation blockOperationWithBlock:^{
-                for (DVCity *city in cities) {
-                    [strongSelf.storageService saveTerminalsWith:city.terminals];
-                }
-            }];
-            [operation setCompletionBlock:^{
-                [strongSelf.output fromOrderInteractorDidFinishFetchingTerminals];
-            }];
-            [queue addOperation:operation];
-        } else {
-            [strongSelf.output fromOrderInteractorDidFinishFetchingTerminalsWithError:error];
-        }
+        dispatch_async(dispatch_get_main_queue(), ^{
+            // do work here
+            for (DVCity *city in cities) {
+                [strongSelf.storageService saveTerminalsWith:city.terminals];
+            }
+        });
+//        if (error == nil) {
+//            NSOperationQueue *queue = [[NSOperationQueue alloc] init];
+//            NSOperation *operation = [NSBlockOperation blockOperationWithBlock:^{
+//            }];
+//            [operation setCompletionBlock:^{
+//                [strongSelf.output fromOrderInteractorDidFinishFetchingTerminals];
+//            }];
+//            [queue addOperation:operation];
+//        } else {
+//            [strongSelf.output fromOrderInteractorDidFinishFetchingTerminalsWithError:error];
+//        }
     }];
 }
 
